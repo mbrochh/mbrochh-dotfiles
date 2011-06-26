@@ -6,7 +6,7 @@ alias ...="cd ../.."
 # Easier file & directory listing
 alias l='ls -CF'  # directories and files in columns
 alias la='ls -A'  # directories and files incl. hidden in columns
-alias ll='ls -alF'  # everything with extra info as a list
+alias ll='ls -ahlF'  # everything with extra info as a list
 alias lsd='ls -l | grep "^d"'  # only directories as a list
 
 
