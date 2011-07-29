@@ -52,11 +52,11 @@ vnoremap <Leader>s :sort<CR>
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
-" Display 80 char ruler
-" ======================
-set colorcolumn=80
-highlight ColorColumn ctermbg=black guibg=black
-
 " Color scheme
 " =============
 color wombat256mod
+
+" Display 80 char ruler
+" ======================
+set colorcolumn=80
+highlight ColorColumn ctermbg=233
