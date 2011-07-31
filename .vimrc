@@ -42,7 +42,6 @@ nmap Q gqap
 map <Leader>r <esc>:so /home/martin/.vimrc<CR>
 map <Leader>[ <esc>:tabprevious<CR>
 map <Leader>] <esc>:tabnext<CR>
-map <Leader>t <esc>:tabnew
 vnoremap <Leader>m "+y
 vnoremap <Leader>s :sort<CR>
 
