@@ -21,6 +21,7 @@ set softtabstop=4
 set shiftwidth=4
 set shiftround 
 set expandtab
+set pastetoggle=<F2> " disable formatting when pasting large chunks of code
 
 set hlsearch
 set incsearch

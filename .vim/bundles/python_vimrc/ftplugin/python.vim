@@ -6,9 +6,6 @@ endif
 " Python syntax test from syntax/python.vim plugin
 let python_highlight_all = 1 
 
-" Enable pydiction autocompletion 
-let g:pydiction_location = '~/.vim/ftplugin/pydiction/complete-dict' 
-
 " Ignore some files with tab autocompletion
 set suffixes=*~,*.pyc,*.pyo
 
