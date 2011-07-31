@@ -29,9 +29,13 @@ set ignorecase
 set smartcase
 
 set nowrap " don't automatically wrap on load
-set tw=80  " width of document (used by gd)
+set tw=79  " width of document (used by gd)
 set fo-=t  " don't automatically wrap text when typing
 set number " show line numbers
+
+" easier formatting of paragraphs
+vmap Q gq
+nmap Q gqap
 
 " Custom mappings
 " ================
