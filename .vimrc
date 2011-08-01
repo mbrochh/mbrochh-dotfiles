@@ -9,6 +9,8 @@ syntax on
 filetype plugin indent on
 set mouse=a
 
+set wildignore+=*.pyc
+
 set autoread
 set nobackup
 set noswapfile
@@ -33,6 +35,9 @@ set tw=79  " width of document (used by gd)
 set fo-=t  " don't automatically wrap text when typing
 set number " show line numbers
 
+" center the cursor vertically
+:nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
+
 " easier formatting of paragraphs
 vmap Q gq
 nmap Q gqap
@@ -56,3 +61,5 @@ color wombat256mod
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=233
+
+source ~/.vim/vimrc/vimrc_python.vim
