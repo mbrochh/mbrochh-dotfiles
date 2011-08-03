@@ -14,6 +14,8 @@ set wildignore+=*.pyc
 set autoread
 set nobackup
 set noswapfile
+" Quicksave command
+noremap <C-W> :update<CR>
 
 set history=700
 set undolevels=700
