@@ -51,8 +51,8 @@ nmap Q gqap
 " Custom mappings
 " ================
 map <Leader>r <esc>:so /home/martin/.vimrc<CR>
-map <Leader>m <esc>:tabprevious<CR>
-map <Leader>n <esc>:tabnext<CR>
+map <Leader>n <esc>:tabprevious<CR>
+map <Leader>m <esc>:tabnext<CR>
 vnoremap <Leader>b "+y
 vnoremap <Leader>s :sort<CR>
 
