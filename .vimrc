@@ -5,17 +5,21 @@ call pathogen#runtime_append_all_bundles()
 
 " General option
 " ===============
+let mapleader = "," " rebind <Leader> key
+set wildmode=list:longest " make TAB behave like in a shell
+set autoread " reload file when changes happen in other editors
 syntax on
 filetype plugin indent on
 set mouse=a
-
+set bs=2 " make backspace behave like normal again
 set wildignore+=*.pyc
 
 set autoread
 set nobackup
 set noswapfile
 " Quicksave command
-noremap <C-W> :update<CR>
+noremap <C-S> :update<CR>
+noremap <C-A> :quit<CR>
 
 set history=700
 set undolevels=700
@@ -47,9 +51,9 @@ nmap Q gqap
 " Custom mappings
 " ================
 map <Leader>r <esc>:so /home/martin/.vimrc<CR>
-map <Leader>[ <esc>:tabprevious<CR>
-map <Leader>] <esc>:tabnext<CR>
-vnoremap <Leader>m "+y
+map <Leader>m <esc>:tabprevious<CR>
+map <Leader>n <esc>:tabnext<CR>
+vnoremap <Leader>b "+y
 vnoremap <Leader>s :sort<CR>
 
 " Show trailing whitespace
