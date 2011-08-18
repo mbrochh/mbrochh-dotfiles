@@ -1,7 +1,10 @@
 set encoding=utf-8
 
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
+
+filetype off
+syntax on
+filetype plugin indent on
 
 " General option
 " ===============
@@ -10,8 +13,6 @@ set wildmode=list:longest " make TAB behave like in a shell
 set autoread " reload file when changes happen in other editors
 set tags=./tags
 
-syntax on
-filetype plugin on
 set mouse=a
 set bs=2 " make backspace behave like normal again
 set wildignore+=*.pyc
