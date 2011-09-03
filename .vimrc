@@ -5,7 +5,13 @@ call pathogen#infect()
 filetype off
 syntax on
 filetype plugin indent on
+filetype plugin on
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
+      
 " General option
 " ===============
 let mapleader = "," " rebind <Leader> key
