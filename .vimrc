@@ -73,4 +73,4 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=233
 
 source ~/.vim/vimrc/vimrc_python.vim
-source ~/.vim/bundle/pydiction/vimrc_pydiction.vim
+" source ~/.vim/bundle/pydiction/vimrc_pydiction.vim
