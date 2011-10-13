@@ -6,7 +6,6 @@ filetype off
 syntax on
 filetype plugin indent on
 filetype plugin on
-autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
@@ -60,10 +59,9 @@ nmap Q gqap
 
 " Custom mappings
 " ================
-map <Leader>r <esc>:so /home/martin/.vimrc<CR>
 map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
-vnoremap <Leader>b "+y
+vnoremap <Leader>c "+y
 vnoremap <Leader>s :sort<CR>
 
 " Show trailing whitespace
@@ -78,5 +76,5 @@ color wombat256mod
 set colorcolumn=80
 highlight ColorColumn ctermbg=233
 
-source ~/.vim/vimrc/vimrc_python.vim
+" source ~/.vim/vimrc/vimrc_python.vim
 " source ~/.vim/bundle/pydiction/vimrc_pydiction.vim
