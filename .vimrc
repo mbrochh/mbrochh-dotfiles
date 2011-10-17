@@ -26,9 +26,9 @@ set autoread
 set nobackup
 set noswapfile
 " Quicksave command
-noremap <C-W> :update<CR>
-vnoremap <C-W> <C-C>:update<CR>
-inoremap <C-W> <C-O>:update<CR>
+noremap <C-Z> :update<CR>
+vnoremap <C-Z> <C-C>:update<CR>
+inoremap <C-Z> <C-O>:update<CR>
 
 " Quick quit command
 noremap <C-A> :quit<CR>
