@@ -10,7 +10,7 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
-      
+
 " General option
 " ===============
 let mapleader = "," " rebind <Leader> key
@@ -26,7 +26,11 @@ set autoread
 set nobackup
 set noswapfile
 " Quicksave command
-noremap <C-S> :update<CR>
+noremap <C-W> :update<CR>
+vnoremap <C-W> <C-C>:update<CR>
+inoremap <C-W> <C-O>:update<CR>
+
+" Quick quit command
 noremap <C-A> :quit<CR>
 
 set history=700
@@ -35,10 +39,10 @@ set undolevels=700
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set shiftround 
+set shiftround
 set expandtab
 " disable formatting when pasting large chunks of code
-set pastetoggle=<F2> 
+set pastetoggle=<F2>
 
 set hlsearch
 set incsearch
