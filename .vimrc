@@ -64,6 +64,7 @@ nmap Q gqap
 " Settings for python-mode
 " =========================
 let g:ropevim_goto_def_newwin = 1
+let ropevim_extended_complete = 1
 
 " Custom mappings
 " ================
