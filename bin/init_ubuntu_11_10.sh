@@ -10,6 +10,7 @@ sudo apt-get install ruby1.9.1
 
 # Databases
 sudo apt-get install mysql-server
+sudo apt-get install sqlite3 libsqlite3-dev
 
 # Development Tools
 sudo apt-get install meld
