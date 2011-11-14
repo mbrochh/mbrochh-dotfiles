@@ -108,3 +108,5 @@ PATH=~/bin:"${PATH}"
 
 # Added by autojump install.sh
 source /etc/profile.d/autojump.bash
+export WORKON_HOME=~/Envs
+source /usr/local/bin/virtualenvwrapper.sh
