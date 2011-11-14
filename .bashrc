@@ -105,3 +105,6 @@ fi
 export PS1="[\W]\$ "
 export GIT_SSL_NO_VERIFY=true
 PATH=~/bin:"${PATH}"
+
+# Added by autojump install.sh
+source /etc/profile.d/autojump.bash
