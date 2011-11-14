@@ -110,3 +110,6 @@ PATH=~/bin:"${PATH}"
 source /etc/profile.d/autojump.bash
 export WORKON_HOME=~/Envs
 source /usr/local/bin/virtualenvwrapper.sh
+if [ -n "$DISPLAY" -a "$TERM" == "xterm" ]; then
+    export TERM=xterm-256color
+fi

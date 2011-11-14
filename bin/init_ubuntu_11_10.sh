@@ -13,6 +13,7 @@ sudo apt-get install mysql-server
 
 # Development Tools
 sudo apt-get install meld
+sudo apt-get install graphviz libgraphviz-dev
 
 # Python related
 sudo apt-get install python-setuptools
