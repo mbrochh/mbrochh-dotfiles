@@ -15,6 +15,13 @@ sudo apt-get install sqlite3 libsqlite3-dev
 # Development Tools
 sudo apt-get install meld
 sudo apt-get install graphviz libgraphviz-dev
+sudo apt-get install libxml2-dev libxslt-dev
+
+# Get PIL working in virtualenvs
+sudo apt-get build-dep python-imaging
+sudo ln -s /usr/lib/i386-linux-gnu/libfreetype.so /usr/lib/
+sudo ln -s /usr/lib/i386-linux-gnu/libz.so /usr/lib/
+sudo ln -s /usr/lib/i386-linux-gnu/libjpeg.so /usr/lib/
 
 # Python related
 sudo apt-get install python-setuptools
