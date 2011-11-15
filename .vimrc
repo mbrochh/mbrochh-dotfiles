@@ -66,6 +66,11 @@ nmap Q gqap
 let g:ropevim_goto_def_newwin = 1
 let ropevim_extended_complete = 1
 
+" Settings for ctrlp
+" ===================
+let g:ctrlp_max_height = 30
+
+
 " Custom mappings
 " ================
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
