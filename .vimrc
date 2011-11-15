@@ -25,6 +25,7 @@ set wildignore+=*.pyc
 set autoread
 set nobackup
 set noswapfile
+
 " Quicksave command
 noremap <C-Z> :update<CR>
 vnoremap <C-Z> <C-C>:update<CR>
@@ -81,8 +82,13 @@ map <c-h> <c-w>h
 
 map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
-vnoremap <Leader>y "+y
 vnoremap <Leader>s :sort<CR>
+
+" Fixing the copy & paste madness
+" ================================
+vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
+nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
+imap <C-v> <Esc><C-v>a
 
 " Show trailing whitespace
 " =========================
