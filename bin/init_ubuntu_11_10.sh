@@ -45,6 +45,7 @@ sudo apt-get build-dep python-mysqldb
 sudo pip install mysql-python
 sudo pip install sqlparse
 sudo pip install configobj
+sudo pip install ipdb
 
 # Crunchyfrog
 cd $HOME/opt
