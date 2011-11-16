@@ -18,6 +18,8 @@ sudo apt-get install meld
 sudo apt-get install graphviz libgraphviz-dev
 sudo apt-get install libxml2-dev libxslt-dev
 sudo apt-get install libhaml-ruby1.8
+sudo apt-get install vim-nox
+ln -s /usr/bin/vim.nox $HOME/bin/v
 
 # Get PIL working in virtualenvs
 sudo apt-get build-dep python-imaging
