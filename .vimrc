@@ -64,8 +64,10 @@ nmap Q gqap
 
 " Settings for python-mode
 " =========================
-let g:ropevim_goto_def_newwin = 1
-let ropevim_extended_complete = 1
+map <Leader>g :call RopeGotoDefinition()<CR>
+let ropevim_enable_shortcuts = 1
+let g:pymode_rope_goto_def_newwin = 1
+let g:pymode_rope_extended_complete = 1
 
 " Settings for ctrlp
 " ===================
@@ -86,7 +88,7 @@ vnoremap <Leader>s :sort<CR>
 
 " Fixing the copy & paste madness
 " ================================
-vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
+vmap <C-y> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
 nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 imap <C-v> <Esc><C-v>a
 
