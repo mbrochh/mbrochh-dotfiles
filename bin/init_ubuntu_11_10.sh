@@ -13,6 +13,7 @@ sudo apt-get install mysql-server
 sudo apt-get install sqlite3 libsqlite3-dev
 
 # Development Tools
+sudo apt-get install ipython
 sudo apt-get install xclip
 sudo apt-get install meld
 sudo apt-get install graphviz libgraphviz-dev
