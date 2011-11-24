@@ -68,6 +68,7 @@ map <Leader>g :call RopeGotoDefinition()<CR>
 let ropevim_enable_shortcuts = 1
 let g:pymode_rope_goto_def_newwin = 1
 let g:pymode_rope_extended_complete = 1
+let g:pymode_breakpoint = 0
 
 " Settings for ctrlp
 " ===================
@@ -85,6 +86,8 @@ map <c-h> <c-w>h
 map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
 vnoremap <Leader>s :sort<CR>
+
+map <Leader>g Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 " Fixing the copy & paste madness
 " ================================
