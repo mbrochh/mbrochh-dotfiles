@@ -31,7 +31,7 @@ vnoremap <C-Z> <C-C>:update<CR>
 inoremap <C-Z> <C-O>:update<CR>
 
 " Quick quit command
-noremap <C-X> :quit<CR>
+noremap <C-x> :quit<CR>
 
 set history=700
 set undolevels=700
