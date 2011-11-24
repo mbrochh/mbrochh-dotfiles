@@ -54,3 +54,6 @@ cd $HOME/bin
 ln -s $HOME/opt/crunchyfrog/crunchyfrog
 cd $HOME
 # echo "export PATH=$PATH:/home/martin/bin" >> .bashrc
+
+# Other useful software
+suto apt-get install screen
