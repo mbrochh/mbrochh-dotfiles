@@ -87,7 +87,7 @@ map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
 vnoremap <Leader>s :sort<CR>
 
-map <Leader>g Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 " Fixing the copy & paste madness
 " ================================
