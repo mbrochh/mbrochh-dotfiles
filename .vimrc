@@ -3,9 +3,8 @@ set encoding=utf-8
 call pathogen#infect()
 
 filetype off
-syntax on
 filetype plugin indent on
-filetype plugin on
+syntax on
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
@@ -69,6 +68,9 @@ let ropevim_enable_shortcuts = 1
 let g:pymode_rope_goto_def_newwin = 1
 let g:pymode_rope_extended_complete = 1
 let g:pymode_breakpoint = 0
+let g:pymode_syntax = 1
+let g:pymode_syntax_builtin_objs = 0
+let g:pymode_syntax_builtin_funcs = 0
 
 " Settings for ctrlp
 " ===================
