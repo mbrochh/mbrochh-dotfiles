@@ -32,7 +32,7 @@ vnoremap <C-Z> <C-C>:update<CR>
 inoremap <C-Z> <C-O>:update<CR>
 
 " Quick quit command
-noremap <C-A> :quit<CR>
+noremap <C-X> :quit<CR>
 
 set history=700
 set undolevels=700
@@ -99,6 +99,7 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " Color scheme
 " =============
+set t_Co=256 
 color wombat256mod
 
 set colorcolumn=80
