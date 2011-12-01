@@ -48,5 +48,12 @@ screen -x $1 -p 4 -X title files
 screen -S $1 -p 4 -X stuff "`printf "cd $2\r"`"
 screen -S $1 -p 4 -X stuff "`printf "workon $3\r"`"
 
+# Start sass watcher
+screen -x $1 -X screen
+screen -x $1 -p 5 -X title sass
+screen -S $1 -p 5 -X stuff "`printf "cd $2\r"`"
+screen -S $1 -p 5 -X stuff "`printf "cd static/css/\r"`"
+screen -S $1 -p 5 -X stuff "`printf "sass --watch *.sass\r"`"
+
 # DIVE IN!
 screen -R $1
