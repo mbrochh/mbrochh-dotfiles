@@ -21,14 +21,18 @@ This document shall be a list of notes so that I remember all steps taken in ord
 ## Create files
 
 **~/.bashrc**::
+    
+    # git
+    export GIT_SSL_NO_VERIFY=true 
 
-	export WORKON_HOME=~/Envs
-	source /usr/local/bin/virtualenvwrapper.sh
+    # virtualenvwrapper
+    export WORKON_HOME=~/Envs
+    source /usr/local/bin/virtualenvwrapper.sh
 
 **~/.bash_profile**::
 
-	# Get the aliases and functions
-	if [ -f ~/.bashrc ]; then
+    # Get the aliases and functions
+    if [ -f ~/.bashrc ]; then
         . ~/.bashrc
-	fi
+    fi
 
