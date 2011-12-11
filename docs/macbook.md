@@ -15,3 +15,20 @@ This document shall be a list of notes so that I remember all steps taken in ord
     sudo easy_install pip
 	sudo pip install virtualenv
 	sudo pip install virtualenvwrapper
+	export WORKON_HOME=~/Envs
+	source /usr/local/bin/virtualenvwrapper.sh
+
+## Create files
+
+**~/.bashrc**::
+
+	export WORKON_HOME=~/Envs
+	source /usr/local/bin/virtualenvwrapper.sh
+
+**~/.bash_profile**::
+
+	# Get the aliases and functions
+	if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+	fi
+
