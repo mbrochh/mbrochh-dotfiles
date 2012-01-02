@@ -19,7 +19,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
   * Change root password: http://dev.mysql.com/doc/refman/5.5/en/resetting-permissions.html
 * Install PostgreSQL: http://www.postgresql.org/download/macosx/
 * Install Sequel Pro: http://www.sequelpro.com/download/
-
+* Install Graphviz: http://www.graphviz.org/Download_macos.php
 
 ## In terminal::
 
@@ -56,6 +56,10 @@ This document shall be a list of notes so that I remember all steps taken in ord
 	# MySQL
 	export PATH=$PATH:/usr/local/mysql/bin/                                       	export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/mysql/lib/ 
 
+    # Setting for the new UTF-8 terminal support in Lion
+    export LC_CTYPE=en_US.UTF-8
+    export LC_ALL=en_US.UTF-8
+
 ## In terminal::
 
 	# install global packages used by all virtualenvs
@@ -63,3 +67,10 @@ This document shall be a list of notes so that I remember all steps taken in ord
 	sudo pip install ipdb
 	sudo pip install mysql-python
 	sudo pip install pillow
+
+## Misc
+
+* If you need graphviz in one of your venvs, try ``pip install pygraphviz``.
+  It will fail but you will see a pygraphviz folder in your 
+  ``~/Envs/envname/build/`` folder. Open it's ``setup.py`` and uncomment
+  the lines for OSX. Try ``pip install`` again.

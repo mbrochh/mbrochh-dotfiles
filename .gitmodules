@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule ".vim/bundle/vimroom"]
+	path = .vim/bundle/vimroom
+	url = git://github.com/vim-scripts/vimroom.vim.git
