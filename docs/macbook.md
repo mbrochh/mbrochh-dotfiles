@@ -23,6 +23,10 @@ This document shall be a list of notes so that I remember all steps taken in ord
 
 ## In terminal::
 
+    # install homebrew
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
+    brew install autojump
+
 	# install pip
     sudo easy_install pip
 
@@ -54,11 +58,17 @@ This document shall be a list of notes so that I remember all steps taken in ord
     alias v=/Applications/MacPorts/MacVim.app/Contents/MacOS/Vim
 
 	# MySQL
-	export PATH=$PATH:/usr/local/mysql/bin/                                       	export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/mysql/lib/ 
+	export PATH=$PATH:/usr/local/mysql/bin/
+    export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/mysql/lib/ 
 
     # Setting for the new UTF-8 terminal support in Lion
     export LC_CTYPE=en_US.UTF-8
     export LC_ALL=en_US.UTF-8
+
+    # for autojump
+    if [ -f `brew --prefix`/etc/autojump ]; then
+         . `brew --prefix`/etc/autojump
+    fi
 
 ## In terminal::
 
