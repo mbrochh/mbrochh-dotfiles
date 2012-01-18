@@ -72,6 +72,10 @@ let g:pymode_syntax = 1
 let g:pymode_syntax_builtin_objs = 0
 let g:pymode_syntax_builtin_funcs = 0
 
+" Settings for vim-powerline
+" ===========================
+set laststatus=2
+
 
 " Settings for ctrlp
 " ===================
