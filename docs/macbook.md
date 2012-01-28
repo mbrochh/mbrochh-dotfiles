@@ -11,7 +11,6 @@ This document shall be a list of notes so that I remember all steps taken in ord
 * Install Skype
 
 ## In Browser
-* Install Mac Ports: http://www.macports.org/install.php
 * Install MacVim: http://code.google.com/p/macvim/
 * Install MySQL: http://www.mysql.com/downloads/mysql/
   * Also install the PreferencePane, comes with the same package
@@ -26,6 +25,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
     # install homebrew
     /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
     brew install autojump
+    brew install graphviz
 
 	# install pip
     sudo easy_install pip
@@ -55,7 +55,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
     source /usr/local/bin/virtualenvwrapper.sh
 
     # MacVim
-    alias v=/Applications/MacPorts/MacVim.app/Contents/MacOS/Vim
+    VIM_APP_DIR=/Applications
 
 	# MySQL
 	export PATH=$PATH:/usr/local/mysql/bin/
@@ -84,3 +84,5 @@ This document shall be a list of notes so that I remember all steps taken in ord
   It will fail but you will see a pygraphviz folder in your 
   ``~/Envs/envname/build/`` folder. Open it's ``setup.py`` and uncomment
   the lines for OSX. Try ``pip install`` again.
+* sudo nano /usr/local/bin/mvim and make sure that the line with the variable
+  is commented out and we use the variable set in .bashrc
