@@ -60,6 +60,8 @@ This document shall be a list of notes so that I remember all steps taken in ord
 	# MySQL
 	export PATH=$PATH:/usr/local/mysql/bin/
     export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/mysql/lib/ 
+    alias start_mysql="/Library/StartupItems/MySQLCOM/MySQLCOM start"
+    alias stop_mysql="/Library/StartupItems/MySQLCOM/MySQLCOM stop"
 
     # Setting for the new UTF-8 terminal support in Lion
     export LC_CTYPE=en_US.UTF-8
@@ -86,3 +88,5 @@ This document shall be a list of notes so that I remember all steps taken in ord
   the lines for OSX. Try ``pip install`` again.
 * sudo nano /usr/local/bin/mvim and make sure that the line with the variable
   is commented out and we use the variable set in .bashrc
+* You might need to change the ``default-storage-engine`` in your
+  ``/etc/my.cnf`` to ``MyISAM``.
