@@ -79,7 +79,7 @@ let g:pymode_syntax_builtin_funcs = 0
 " Settings for vim-powerline
 " ===========================
 set laststatus=2
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
 
 
 " Settings for ctrlp
