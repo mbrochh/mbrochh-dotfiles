@@ -54,12 +54,15 @@ set tw=79  " width of document (used by gd)
 set fo-=t  " don't automatically wrap text when typing
 set number " show line numbers
 
+"
 " center the cursor vertically
 :nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
+
 
 " easier formatting of paragraphs
 vmap Q gq
 nmap Q gqap
+
 
 " Settings for python-mode
 " =========================
@@ -72,9 +75,11 @@ let g:pymode_syntax = 1
 let g:pymode_syntax_builtin_objs = 0
 let g:pymode_syntax_builtin_funcs = 0
 
+
 " Settings for vim-powerline
 " ===========================
 set laststatus=2
+let g:Powerline_symbols = 'fancy'
 
 
 " Settings for ctrlp
