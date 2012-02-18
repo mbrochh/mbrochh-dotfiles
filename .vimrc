@@ -81,6 +81,10 @@ let g:pymode_syntax_builtin_funcs = 0
 set laststatus=2
 " let g:Powerline_symbols = 'fancy'
 
+" Settings for vim-markdown
+" ==========================
+set nofoldenable
+
 
 " Settings for ctrlp
 " ===================
