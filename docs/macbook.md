@@ -81,6 +81,9 @@ This document shall be a list of notes so that I remember all steps taken in ord
 	sudo pip install mysql-python
 	sudo pip install pillow
 
+    # install useful tools
+    brew install wget
+
 ## Misc
 
 * If you need graphviz in one of your venvs, try ``pip install pygraphviz``.
