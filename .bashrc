@@ -3,7 +3,12 @@
 # for examples
 
 # If not running interactively, don't do anything
-[ -z "$PS1" ] && return
+# [ -z "$PS1" ] && return
+
+# Include user's bin folder.
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
@@ -104,7 +109,6 @@ fi
 
 export PS1="[\W]\$ "
 export GIT_SSL_NO_VERIFY=true
-PATH=~/bin:"${PATH}"
 
 # Added by autojump install.sh
 source /etc/profile.d/autojump.bash
