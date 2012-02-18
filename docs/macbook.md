@@ -19,6 +19,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
 * Install PostgreSQL: http://www.postgresql.org/download/macosx/
 * Install Sequel Pro: http://www.sequelpro.com/download/
 * Install Graphviz: http://www.graphviz.org/Download_macos.php
+* Install DiffMerge http://sourcegear.com/diffmerge/downloads.php
 
 ## In terminal::
 
