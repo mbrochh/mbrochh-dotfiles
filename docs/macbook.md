@@ -47,7 +47,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
     fi
 
 **~/.bashrc**::
-    
+
     # git
     export GIT_SSL_NO_VERIFY=true 
 
@@ -67,6 +67,9 @@ This document shall be a list of notes so that I remember all steps taken in ord
     # Setting for the new UTF-8 terminal support in Lion
     export LC_CTYPE=en_US.UTF-8
     export LC_ALL=en_US.UTF-8
+
+    # colored ls output
+    alias ls='ls -G'
 
     # for autojump
     if [ -f `brew --prefix`/etc/autojump ]; then
