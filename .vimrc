@@ -24,6 +24,7 @@ set wildignore+=*.pyc
 set autoread
 set nobackup
 set noswapfile
+set clipboard=unnamed
 
 " Quicksave command
 noremap <C-Z> :update<CR>
