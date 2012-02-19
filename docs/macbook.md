@@ -17,6 +17,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
   * Start MySQL Server
   * Change root password: http://dev.mysql.com/doc/refman/5.5/en/resetting-permissions.html
 * Install PostgreSQL: http://www.postgresql.org/download/macosx/
+* Install pgadmin3: http://pgadmin.org/download/macosx.php
 * Install Sequel Pro: http://www.sequelpro.com/download/
 * Install Graphviz: http://www.graphviz.org/Download_macos.php
 * Install DiffMerge http://sourcegear.com/diffmerge/downloads.php
