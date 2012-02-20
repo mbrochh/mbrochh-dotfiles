@@ -65,3 +65,5 @@ This document shall be a list of notes so that I remember all steps taken in ord
   is commented out and we use the variable set in .bashrc
 * You might need to change the ``default-storage-engine`` in your
   ``/etc/my.cnf`` to ``MyISAM``.
+* Import solarized terminal colors from here:
+  https://github.com/altercation/solarized/tree/master/osx-terminal.app-colors-solarized/xterm-256color

@@ -21,6 +21,3 @@ export PGDATA=/Library/PostgreSQL/9.1/data/
 # Setting for the new UTF-8 terminal support in Lion
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-
-# colored ls output
-alias ls='ls -G'
