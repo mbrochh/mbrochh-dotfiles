@@ -8,18 +8,19 @@
       co = checkout
       br = branch
       log1 = log --pretty=oneline --abbrev-commit
-	lg = log --graph --pretty=format:'%Cred%h..%Creset - %s %Cgreen(%cr)%Creset - %an' --abbrev-commit --date=relative
+	  lg = log --graph --pretty=format:'%Cred%h..%Creset - %s %Cgreen(%cr)%Creset - %an' --abbrev-commit --date=relative
 [merge]
       tool = meld
 [rerere]
       enabled = true
 [core]
       editor = nano
+	  excludesfile = $HOME/.gitignore_global
 [giggle]
-	main-window-maximized = true
-	main-window-geometry = 0x0+0+0
-	history-view-vpane-position = 374
-	main-window-view = HistoryView
+	  main-window-maximized = true
+	  main-window-geometry = 0x0+0+0
+	  history-view-vpane-position = 374
+	  main-window-view = HistoryView
 [user]
-	name = Martin Brochhaus
-	email = mbrochh@gmail.com
+	  name = Martin Brochhaus
+	  email = mbrochh@gmail.com
