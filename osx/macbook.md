@@ -16,7 +16,8 @@ This document shall be a list of notes so that I remember all steps taken in ord
   * Also install the PreferencePane, comes with the same package
   * Start MySQL Server
   * Change root password: http://dev.mysql.com/doc/refman/5.5/en/resetting-permissions.html
-* Install PostgreSQL: http://www.postgresql.org/download/macosx/
+* Install PostgreSQL: http://www.postgresql.org/download/macosx/ (see notes
+  about sysctl.conf in README before installing and reboot)
 * Install pgadmin3: http://pgadmin.org/download/macosx.php
 * Install Sequel Pro: http://www.sequelpro.com/download/
 * Install Graphviz: http://www.graphviz.org/Download_macos.php
@@ -28,6 +29,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
     /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
     brew install autojump
     brew install graphviz
+    brew install curl
 
 	# install pip
     sudo easy_install pip
@@ -38,44 +40,12 @@ This document shall be a list of notes so that I remember all steps taken in ord
 	export WORKON_HOME=~/Envs
 	source /usr/local/bin/virtualenvwrapper.sh
 
-## Create files
+## Create symlinks to files
 
-**~/.bash_profile**::
-
-    # Get the aliases and functions
-    if [ -f ~/.bashrc ]; then
-        . ~/.bashrc
-    fi
-
-**~/.bashrc**::
-
-    # git
-    export GIT_SSL_NO_VERIFY=true 
-
-    # virtualenvwrapper
-    export WORKON_HOME=~/Envs
-    source /usr/local/bin/virtualenvwrapper.sh
-
-    # MacVim
-    VIM_APP_DIR=/Applications
-
-	# MySQL
-	export PATH=$PATH:/usr/local/mysql/bin/
-    export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/mysql/lib/ 
-    alias start_mysql="/Library/StartupItems/MySQLCOM/MySQLCOM start"
-    alias stop_mysql="/Library/StartupItems/MySQLCOM/MySQLCOM stop"
-
-    # Setting for the new UTF-8 terminal support in Lion
-    export LC_CTYPE=en_US.UTF-8
-    export LC_ALL=en_US.UTF-8
-
-    # colored ls output
-    alias ls='ls -G'
-
-    # for autojump
-    if [ -f `brew --prefix`/etc/autojump ]; then
-         . `brew --prefix`/etc/autojump
-    fi
+    cd $HOME
+    ln -s ~/mbrochh-dotfiles/osx/.bash_profile
+    ln -s ~/mbrochh-dotfiles/osx/.bashrc
+    ln -s ~/mbrochh-dotfiles/osx/.gitconfig
 
 ## In terminal::
 
@@ -85,13 +55,10 @@ This document shall be a list of notes so that I remember all steps taken in ord
 	sudo pip install mysql-python
 	sudo pip install pillow
 
-    # install useful tools
-    brew install wget
-
 ## Misc
 
 * If you need graphviz in one of your venvs, try ``pip install pygraphviz``.
-  It will fail but you will see a pygraphviz folder in your 
+  It will fail but you will see a pygraphviz folder in your
   ``~/Envs/envname/build/`` folder. Open it's ``setup.py`` and uncomment
   the lines for OSX. Try ``pip install`` again.
 * sudo nano /usr/local/bin/mvim and make sure that the line with the variable

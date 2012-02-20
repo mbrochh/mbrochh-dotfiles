@@ -1,0 +1,25 @@
+[color]
+      diff = auto
+      status = auto
+      branch = auto
+[alias]
+      st = status
+      ci = commit
+      co = checkout
+      br = branch
+      log1 = log --pretty=oneline --abbrev-commit
+	lg = log --graph --pretty=format:'%Cred%h..%Creset - %s %Cgreen(%cr)%Creset - %an' --abbrev-commit --date=relative
+[merge]
+      tool = diffmerge
+[rerere]
+      enabled = true
+[core]
+      editor = nano
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 0x0+0+0
+	history-view-vpane-position = 374
+	main-window-view = HistoryView
+[user]
+	name = Martin Brochhaus
+	email = mbrochh@gmail.com
