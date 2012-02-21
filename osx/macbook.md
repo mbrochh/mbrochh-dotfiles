@@ -74,3 +74,4 @@ This document shall be a list of notes so that I remember all steps taken in ord
   ``/etc/my.cnf`` to ``MyISAM``.
 * Import solarized terminal colors from here:
   https://github.com/altercation/solarized/tree/master/osx-terminal.app-colors-solarized/xterm-256color
+* Install PIL: http://devdetails.com/2011/09/20/install-pil-in-a-virtualenv-on-mac-osx-lion/
