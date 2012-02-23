@@ -29,6 +29,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
     /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
 
     # install useful tools
+    brew install git
     brew install autojump
     brew install graphviz
     brew install curl
