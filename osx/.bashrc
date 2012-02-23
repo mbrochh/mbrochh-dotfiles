@@ -1,4 +1,4 @@
-export PS1='\w\[\033[31m\]$(__git_ps1 "(%s)") \[\033[01;34m\]$\[\033[00m\] '
+export PS1='\w \[\033[31m\]$(__git_ps1 "(%s)") \[\033[01;34m\]$\[\033[00m\] '
 
 # git
 export GIT_SSL_NO_VERIFY=true
