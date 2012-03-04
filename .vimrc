@@ -92,6 +92,7 @@ let g:pymode_breakpoint = 0
 let g:pymode_syntax = 1
 let g:pymode_syntax_builtin_objs = 0
 let g:pymode_syntax_builtin_funcs = 0
+map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 
 " Settings for vim-powerline
@@ -109,8 +110,8 @@ set nofoldenable
 let g:ctrlp_max_height = 30
 
 
-" Custom mappings
-" ================
+" Movement
+" =========
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
 map <c-j> <c-w>j
 map <c-k> <c-w>k
@@ -121,7 +122,11 @@ map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
 vnoremap <Leader>s :sort<CR>
 
-map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+" Custom mappings
+" ================
+vnoremap < <gv
+vnoremap > >gv
+
 
 " Fixing the copy & paste madness
 " ================================
