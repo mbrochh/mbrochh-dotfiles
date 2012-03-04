@@ -124,9 +124,12 @@ vnoremap <Leader>s :sort<CR>
 
 " Custom mappings
 " ================
-vnoremap < <gv
-vnoremap > >gv
-
+vnoremap < <gv  " better indentation
+vnoremap > >gv  " better indentation
+inoremap kj <Esc>  " the smash escape
+map <Leader>a ggVG  " select all
+noremap <C-h> ^  " better jump to beginning of line
+noremap <C-l> $  " better jump to end of line
 
 " Fixing the copy & paste madness
 " ================================
@@ -141,7 +144,7 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " Color scheme
 " =============
-set t_Co=256 
+set t_Co=256
 color wombat256mod
 
 set colorcolumn=80
