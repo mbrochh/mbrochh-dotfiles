@@ -33,14 +33,14 @@ screen -x $1 -X screen
 screen -x $1 -p 2 -X title tests
 screen -S $1 -p 2 -X stuff "`printf "cd $2\r"`"
 screen -S $1 -p 2 -X stuff "`printf "workon $3\r"`"
-screen -S $1 -p 2 -X stuff "`printf "v\r"`"
+screen -S $1 -p 2 -X stuff "`printf "vim\r"`"
 
 # Start vim for code files
 screen -x $1 -X screen
 screen -x $1 -p 3 -X title code
 screen -S $1 -p 3 -X stuff "`printf "cd $2\r"`"
 screen -S $1 -p 3 -X stuff "`printf "workon $3\r"`"
-screen -S $1 -p 3 -X stuff "`printf "v\r"`"
+screen -S $1 -p 3 -X stuff "`printf "vim\r"`"
 
 # Go to project folder
 screen -x $1 -X screen
