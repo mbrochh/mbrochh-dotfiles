@@ -1,5 +1,7 @@
 set encoding=utf-8
 
+autocmd! bufwritepost .vimrc source %
+
 call pathogen#infect()
 
 filetype off
@@ -21,7 +23,6 @@ set mouse=a
 set bs=2 " make backspace behave like normal again
 set wildignore+=*.pyc
 
-set autoread
 set nobackup
 set noswapfile
 set clipboard=unnamed
