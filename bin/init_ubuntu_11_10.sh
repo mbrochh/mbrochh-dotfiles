@@ -57,3 +57,6 @@ cd $HOME
 
 # Other useful software
 suto apt-get install screen
+
+# Solves pixmap bug in vim
+sudo apt-get install gtk2-engines-pixbuf
