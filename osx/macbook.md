@@ -33,6 +33,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
     brew install autojump
     brew install graphviz
     brew install curl
+    brew install gettext
 
     # install fabric completion
     brew install bash-completion
