@@ -34,6 +34,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
     brew install graphviz
     brew install curl
     brew install gettext
+    sudo brew link gettext
 
     # install fabric completion
     brew install bash-completion
