@@ -1,0 +1,2 @@
+caption always '%c:%s'
+defscrollback 5000

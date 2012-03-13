@@ -24,3 +24,5 @@
 [user]
 	  name = Martin Brochhaus
 	  email = mbrochh@gmail.com
+[http]
+	sslverify = false
