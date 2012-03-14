@@ -35,6 +35,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
     brew install curl
     brew install gettext
     sudo brew link gettext
+    brew install imagemagick
 
     # install fabric completion
     brew install bash-completion
