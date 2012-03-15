@@ -129,8 +129,6 @@ vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
 inoremap kj <Esc>  " the smash escape
 map <Leader>a ggVG  " select all
-noremap <C-h> ^  " better jump to beginning of line
-noremap <C-l> $  " better jump to end of line
 
 " Fixing the copy & paste madness
 " ================================
