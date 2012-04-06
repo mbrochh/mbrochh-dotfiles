@@ -11,6 +11,7 @@ alias lsd='ls -l | grep "^d"'  # only directories as a list
 
 
 # Shortcuts
+alias e="cd ~/Envs"
 alias f="cd ~/Forks"
 alias m="cd ~/mbrochh-dotfiles"
 alias p="cd ~/Projects"
