@@ -1,0 +1,51 @@
+# Git
+export GIT_SSL_NO_VERIFY=true
+
+
+# virtualenvwrapper
+if [ -d "$HOME/ENvs" ] ; then
+    export WORKON_HOME="~/Envs"
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
+
+
+# =========
+# OSX Stuff
+# =========
+
+
+if [ -n "$DISPLAY" -a "$TERM" == "xterm" ]; then
+    export TERM="xterm-256color"
+fi
+
+
+# MacVim
+if [ -d "/Applications" ] ; then
+    export VIM_APP_DIR="/Applications"
+fi
+
+
+# MySQL
+if [ -d "/usr/local/mysql/bin" ] ; then
+    export PATH=$PATH:/usr/local/mysql/bin:$HOME/bin
+    export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/mysql/lib/
+fi
+
+
+# PostgreSQL
+if [ -d "/Library/PostgreSQL/9.1/bin" ] ; then
+    export PATH=/Library/PostgreSQL/9.1/bin:$PATH
+    export PGDATA=/Library/PostgreSQL/9.1/data/
+fi
+
+
+# Setting for the new UTF-8 terminal support in Lion
+export LC_CTYPE="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US"
+
+
+# Include user's bin folder.
+if [ -d "$HOME/bin" ] ; then
+    export PATH="$HOME/bin:$PATH"
+fi
