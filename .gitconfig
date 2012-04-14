@@ -1,3 +1,5 @@
+[push]
+      default = upstream
 [color]
       diff = auto
       status = auto
