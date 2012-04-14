@@ -6,6 +6,7 @@
 # $1: Screen sessionname
 # $2: Project directory
 # $3: Name of virtualenv
+# $4: Path to the static/css/ folder relative from $2
 
 # Kill old screen session with the same name.
 screen -X -S $1 quit
