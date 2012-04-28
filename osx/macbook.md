@@ -5,7 +5,6 @@ This document shall be a list of notes so that I remember all steps taken in ord
 ## In App Store:
 
 * Install XCode (Important!)
-* Install Mou
 * Install Dropbox
 * Install Evernote
 * Install Skype
