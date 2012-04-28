@@ -1,5 +1,4 @@
 set encoding=utf-8
-
 autocmd! bufwritepost .vimrc source %
 
 call pathogen#infect()

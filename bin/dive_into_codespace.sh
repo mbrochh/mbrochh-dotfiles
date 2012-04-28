@@ -56,5 +56,12 @@ screen -S $1 -p 5 -X stuff "`printf "cd $2\r"`"
 screen -S $1 -p 5 -X stuff "`printf "cd $4\r"`"
 screen -S $1 -p 5 -X stuff "`printf "sass --watch *.sass\r"`"
 
+# Start gorun.py to rebuild the sphinxdocs on each change
+screen -x $1 -X screen
+screen -x $1 -p 6 -X title sphinxdoc
+screen -S $1 -p 6 -X stuff "`printf "cd ../../../../\r"`"
+screen -S $1 -p 6 -X stuff "`printf "workon $3\r"`"
+screen -S $1 -p 6 -X stuff "`printf "gorun.py gorun_settings.py\r"`"
+
 # DIVE IN!
 screen -R $1
