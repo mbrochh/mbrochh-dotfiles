@@ -4,7 +4,7 @@ mkdir bin
 mkdir opt
 
 # Essentials
-sudo apt-get install git-core git-gui git-doc mercurial ruby1.9.1
+sudo apt-get install git-core git-gui git-doc mercurial ruby1.9.1 rubygems1.9
 
 # Databases
 sudo apt-get install mysql-server sqlite3 libsqlite3-dev postgresql pgdmin3 python-psycopg2
@@ -43,6 +43,9 @@ sudo pip install mysql-python
 sudo pip install sqlparse
 sudo pip install configobj
 sudo pip install ipdb
+
+# Global Ruby gems
+sudo gem install haml
 
 # Crunchyfrog
 cd $HOME/opt
