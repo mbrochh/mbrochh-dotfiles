@@ -4,23 +4,19 @@ mkdir bin
 mkdir opt
 
 # Essentials
-sudo apt-get install git-core git-gui git-doc
-sudo apt-get install mercurial
-sudo apt-get install ruby1.9.1
+sudo apt-get install git-core git-gui git-doc mercurial ruby1.9.1 rubygems1.9
 
 # Databases
-sudo apt-get install mysql-server
-sudo apt-get install sqlite3 libsqlite3-dev
+sudo apt-get install mysql-server sqlite3 libsqlite3-dev postgresql pgdmin3 python-psycopg2
+sudo -u postgres psql postgres
+# \password postgres
+# CTRL+D
+# sudo nano /etc/postgresql/9.1/main/pg_hba.conf
+# change peer to md5
+# sudo /etc/init.d/postgresql restart
 
 # Development Tools
-sudo apt-get install ipython
-sudo apt-get install xclip
-sudo apt-get install curl
-sudo apt-get install meld
-sudo apt-get install graphviz libgraphviz-dev
-sudo apt-get install libxml2-dev libxslt-dev
-sudo apt-get install libhaml-ruby1.8
-sudo apt-get install vim-nox
+sudo apt-get install ipython xclip curl meld graphviz libgraphviz-dev libxml2-dev libxslt-dev libhaml-ruby1.8 vim-nox screen gtk2-engines-pixbuf
 ln -s /usr/bin/vim.nox $HOME/bin/v
 
 # Get PIL working in virtualenvs
@@ -48,6 +44,9 @@ sudo pip install sqlparse
 sudo pip install configobj
 sudo pip install ipdb
 
+# Global Ruby gems
+sudo gem install haml
+
 # Crunchyfrog
 cd $HOME/opt
 hg clone http://crunchyfrog.googlecode.com/hg/ crunchyfrog
@@ -56,8 +55,13 @@ ln -s $HOME/opt/crunchyfrog/crunchyfrog
 cd $HOME
 # echo "export PATH=$PATH:/home/martin/bin" >> .bashrc
 
-# Other useful software
-suto apt-get install screen
 
-# Solves pixmap bug in vim
-sudo apt-get install gtk2-engines-pixbuf
+# Install vim
+sudo apt-get build-dep vim
+hg clone https://vim.googlecode.com/hg/ vim
+cd vim/src
+./configure --enable-pythoninterp --with-features=huge --prefix=$HOME/opt/vim
+make && make install
+mkdir -p $HOME/bin
+cd $HOME/bin
+ln -s $HOME/opt/vim/bin/vim

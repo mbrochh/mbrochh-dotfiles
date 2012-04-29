@@ -9,5 +9,15 @@ else
     fi
 fi
 
+# Set git autocompletion and PS1 integration
+if [ `uname` = 'Darwin' ]; then
+    if [ -f `brew --prefix`/etc/bash_completion ]; then
+        . `brew --prefix`/etc/bash_completion
+    fi
+else
+    if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+        . /etc/bash_completion
+    fi
+fi
 
 export PS1='\w \[\033[31m\]$(__git_ps1 "(%s)") \[\033[01;34m\]$\[\033[00m\] '
