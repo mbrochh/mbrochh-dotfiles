@@ -8,6 +8,9 @@ sudo apt-get install git-core git-gui git-doc mercurial ruby1.9.1
 
 # Databases
 sudo apt-get install mysql-server sqlite3 libsqlite3-dev postgresql pgdmin3
+sudo -u postgres psql postgres
+# \password postgres
+# CTRL+D
 
 # Development Tools
 sudo apt-get install ipython xclip curl meld graphviz libgraphviz-dev libxml2-dev libxslt-dev libhaml-ruby1.8 vim-nox screen gtk2-engines-pixbuf
