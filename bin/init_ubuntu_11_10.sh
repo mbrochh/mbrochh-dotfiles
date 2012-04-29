@@ -11,6 +11,9 @@ sudo apt-get install mysql-server sqlite3 libsqlite3-dev postgresql pgdmin3 pyth
 sudo -u postgres psql postgres
 # \password postgres
 # CTRL+D
+# sudo nano /etc/postgresql/9.1/main/pg_hba.conf
+# change peer to md5
+# sudo /etc/init.d/postgresql restart
 
 # Development Tools
 sudo apt-get install ipython xclip curl meld graphviz libgraphviz-dev libxml2-dev libxslt-dev libhaml-ruby1.8 vim-nox screen gtk2-engines-pixbuf
