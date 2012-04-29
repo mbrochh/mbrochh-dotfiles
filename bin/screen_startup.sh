@@ -7,6 +7,8 @@
 # $2: Project directory
 # $3: Name of virtualenv
 # $4: Path to the static/css/ folder relative from $2
+# $5: Path to docs gorun file relative from $2
+# $6: Name of docs gorun file
 
 # Kill old screen session with the same name.
 screen -X -S $1 quit
@@ -57,11 +59,13 @@ screen -S $1 -p 5 -X stuff "`printf "cd $4\r"`"
 screen -S $1 -p 5 -X stuff "`printf "sass --watch *.sass\r"`"
 
 # Start gorun.py to rebuild the sphinxdocs on each change
-screen -x $1 -X screen
-screen -x $1 -p 6 -X title sphinxdoc
-screen -S $1 -p 6 -X stuff "`printf "cd ../../../../\r"`"
-screen -S $1 -p 6 -X stuff "`printf "workon $3\r"`"
-screen -S $1 -p 6 -X stuff "`printf "gorun.py gorun_settings.py\r"`"
+if [ $5 != '' ]; then
+    screen -x $1 -X screen
+    screen -x $1 -p 6 -X title sphinxdoc
+    screen -S $1 -p 6 -X stuff "`printf "cd $5\r"`"
+    screen -S $1 -p 6 -X stuff "`printf "workon $3\r"`"
+    screen -S $1 -p 6 -X stuff "`printf "gorun.py $6\r"`"
+fi
 
 # DIVE IN!
 screen -R $1
