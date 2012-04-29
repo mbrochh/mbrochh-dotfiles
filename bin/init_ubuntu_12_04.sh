@@ -56,6 +56,16 @@ cd $HOME
 # echo "export PATH=$PATH:/home/martin/bin" >> .bashrc
 
 
+# Install autojump
+cd $HOME/opt
+git clone git://github.com/joelthelion/autojump.git
+cd autojump
+./install.sh
+cd $HOME/bin
+ln -s ../.autojump/bin/autojump j
+cd $HOME
+
+
 # Install vim
 sudo apt-get build-dep vim
 hg clone https://vim.googlecode.com/hg/ vim
