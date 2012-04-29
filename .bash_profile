@@ -6,21 +6,21 @@ done
 unset file
 
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    . /etc/bash_completion
-fi
-
-
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
 
 # Added by autojump install.sh
-if [ -f /etc/profile.d/autojump.bash ] ; then
-    source /etc/profile.d/autojump.bash
+
+# Load autojump
+if [ `uname` = 'Darwin' ]; then
+    if [ -f `brew --prefix`/etc/autojump ]; then
+        . `brew --prefix`/etc/autojump
+    fi
+else
+    if [ -f /etc/profile.d/autojump.bash ] ; then
+        source /etc/profile.d/autojump.bash
+    fi
 fi
 
 

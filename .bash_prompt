@@ -9,10 +9,14 @@ else
     fi
 fi
 
+# Set git autocompletion and PS1 integration
 if [ `uname` = 'Darwin' ]; then
-    # Set git autocompletion and PS1 integration for OSX
     if [ -f `brew --prefix`/etc/bash_completion ]; then
         . `brew --prefix`/etc/bash_completion
+    fi
+else
+    if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+        . /etc/bash_completion
     fi
 fi
 
