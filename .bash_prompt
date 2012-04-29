@@ -9,5 +9,11 @@ else
     fi
 fi
 
+if [ `uname` = 'Darwin' ]; then
+    # Set git autocompletion and PS1 integration for OSX
+    if [ -f `brew --prefix`/etc/bash_completion ]; then
+        . `brew --prefix`/etc/bash_completion
+    fi
+fi
 
 export PS1='\w \[\033[31m\]$(__git_ps1 "(%s)") \[\033[01;34m\]$\[\033[00m\] '
