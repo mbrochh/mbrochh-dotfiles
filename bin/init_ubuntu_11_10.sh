@@ -7,7 +7,7 @@ mkdir opt
 sudo apt-get install git-core git-gui git-doc mercurial ruby1.9.1
 
 # Databases
-sudo apt-get install mysql-server sqlite3 libsqlite3-dev postgresql pgdmin3
+sudo apt-get install mysql-server sqlite3 libsqlite3-dev postgresql pgdmin3 python-psycopg2
 sudo -u postgres psql postgres
 # \password postgres
 # CTRL+D
