@@ -21,6 +21,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
 * Install Sequel Pro: http://www.sequelpro.com/download/
 * Install Graphviz: http://www.graphviz.org/Download_macos.php
 * Install DiffMerge http://sourcegear.com/diffmerge/downloads.php
+* Install PyGTK http://macpkg.sourceforge.net/
 
 ## In terminal::
 
@@ -29,7 +30,6 @@ This document shall be a list of notes so that I remember all steps taken in ord
 
     # install useful tools
     brew install git
-    brew install meld
     brew install autojump
     brew install graphviz
     brew install curl
@@ -37,6 +37,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
     sudo brew link gettext
     brew install imagemagick
     brew install ghostscript
+    brew install meld
 
     # install fabric completion
     brew install bash-completion
@@ -80,3 +81,5 @@ This document shall be a list of notes so that I remember all steps taken in ord
 * Import solarized terminal colors from here:
   https://github.com/altercation/solarized/tree/master/osx-terminal.app-colors-solarized/xterm-256color
 * Install PIL: http://devdetails.com/2011/09/20/install-pil-in-a-virtualenv-on-mac-osx-lion/
+* Installing meld might be troublesome. You might need to change the owner
+  of some locale folder, then run brew link xz
