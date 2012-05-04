@@ -29,6 +29,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
 
     # install useful tools
     brew install git
+    brew install meld
     brew install autojump
     brew install graphviz
     brew install curl
