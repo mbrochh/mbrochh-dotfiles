@@ -17,6 +17,7 @@ alias m="cd ~/mbrochh-dotfiles"
 alias p="cd ~/Projects"
 alias r="cd ~/Repos"
 
+alias c="clear"
 alias g="git"
 alias v="vim"
 alias sbrc="source ~/.bashrc"

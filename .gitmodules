@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/vim-flake8"]
 	path = .vim/bundle/vim-flake8
 	url = https://github.com/nvie/vim-flake8
+[submodule "submodules/fabric-completion"]
+	path = submodules/fabric-completion
+	url = git://github.com/underself/fabric-completion.git
