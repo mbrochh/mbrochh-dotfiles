@@ -68,6 +68,18 @@ This document shall be a list of notes so that I remember all steps taken in ord
 	sudo pip install mysql-python
 	sudo pip install pillow
 
+## In terminal
+
+Eventually the screen version that comes with OSX will not work with 265
+colors. Therefore you might need to build it from scratch::
+
+    git clone git://git.savannah.gnu.org/screen.git
+    cd screen/src
+    ./autogen.sh
+    ./configure --enable-colors256 --with-sys-screenrc=/etc/screenrc
+    make   # I got a lot of warnings here, but they don't seem to matter
+    sudo make install
+
 ## Misc
 
 * If you need graphviz in one of your venvs, try ``pip install pygraphviz``.
