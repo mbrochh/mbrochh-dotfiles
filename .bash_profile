@@ -11,15 +11,8 @@ unset file
 
 
 # Added by autojump install.sh
-
 # Load autojump
-if [ `uname` = 'Darwin' ]; then
-    if [ -f `brew --prefix`/etc/autojump ]; then
-        . `brew --prefix`/etc/autojump
-    fi
-else
-    [[ -s ~/.autojump/etc/profile.d/autojump.bash ]] && source ~/.autojump/etc/profile.d/autojump.bash
-fi
+[[ -s ~/.autojump/etc/profile.d/autojump.bash ]] && source ~/.autojump/etc/profile.d/autojump.bash
 
 
 # don't put duplicate lines in the history. See bash(1) for more options
