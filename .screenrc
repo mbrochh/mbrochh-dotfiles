@@ -1,6 +1,7 @@
 caption always '%c:%s'
 defscrollback 5000
 multiuser on
+acladd pairprogger
 
 # terminfo and termcap for nice 256 color terminal
 # allow bold colors - necessary for some reason
