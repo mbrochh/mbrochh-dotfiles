@@ -16,7 +16,7 @@ sudo -u postgres psql postgres
 # sudo /etc/init.d/postgresql restart
 
 # Development Tools
-sudo apt-get install ipython xclip curl meld graphviz libgraphviz-dev libxml2-dev libxslt-dev libhaml-ruby1.8 vim-nox screen gtk2-engines-pixbuf
+sudo apt-get install ipython xclip curl meld graphviz libgraphviz-dev libxml2-dev libxslt-dev libhaml-ruby1.8 vim-nox screen gtk2-engines-pixbuf libyaml-dev
 ln -s /usr/bin/vim.nox $HOME/bin/v
 
 # Get PIL working in virtualenvs
@@ -43,6 +43,7 @@ sudo pip install mysql-python
 sudo pip install sqlparse
 sudo pip install configobj
 sudo pip install ipdb
+sudo pip install watchdog
 
 # Global Ruby gems
 sudo gem install haml

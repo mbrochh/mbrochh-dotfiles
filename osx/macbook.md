@@ -38,6 +38,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
     brew install imagemagick
     brew install ghostscript
     brew install meld
+    brew install libyaml
 
     # install fabric completion
     brew install bash-completion
@@ -67,6 +68,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
 	sudo pip install ipdb
 	sudo pip install mysql-python
 	sudo pip install pillow
+    sudo pip install watchdog
 
 ## In terminal
 
