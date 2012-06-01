@@ -5,6 +5,7 @@ export GIT_SSL_NO_VERIFY=true
 # virtualenvwrapper
 if [ -d "$HOME/Envs" ] ; then
     export WORKON_HOME="~/Envs"
+    #source /usr/local/bin/virtualenvwrapper.sh
     source $HOME/.bashrc.virtualenvwrapper
 fi
 
@@ -14,7 +15,7 @@ fi
 # =========
 
 
-if [ -n "$DISPLAY" -a "$TERM" == "xterm" ]; then
+if [ -n "$DISPLAY" -a "$TERM" = "xterm" ]; then
     export TERM="xterm-256color"
 fi
 
