@@ -51,6 +51,11 @@ inoremap <C-Z> <C-O>:update<CR>
 " Quick quit command
 noremap <Leader>e :quit<CR>
 
+" Bind nohl
+noremap <C-n> :nohl<CR>
+vnoremap <C-n> :nohl<CR>
+inoremap <C-n> :nohl<CR>
+
 set history=700
 set undolevels=700
 
