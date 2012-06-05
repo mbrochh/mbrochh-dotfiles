@@ -20,6 +20,8 @@ set tags=./tags
 set mouse=a
 set bs=2 " make backspace behave like normal again
 set wildignore+=*.pyc
+set wildignore+=*_build/*
+set wildignore+=*/coverage/*
 
 set nobackup
 set nowritebackup
@@ -86,7 +88,6 @@ set number " show line numbers
 vmap Q gq
 nmap Q gqap
 
-
 " Settings for python-mode
 " =========================
 map <Leader>g :call RopeGotoDefinition()<CR>
@@ -113,7 +114,6 @@ set nofoldenable
 " Settings for ctrlp
 " ===================
 let g:ctrlp_max_height = 30
-
 
 " Movement
 " =========
