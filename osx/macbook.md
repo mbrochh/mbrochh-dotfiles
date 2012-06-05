@@ -40,6 +40,11 @@ This document shall be a list of notes so that I remember all steps taken in ord
     brew install meld
     brew install libyaml
 
+    # needed for twitter bootstrap
+    brew install nodejs
+    curl http://npmjs.org/install.sh | sh 
+    npm install recess uglify-js jshint -g
+
     # install zsh
     brew install zsh
     wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
