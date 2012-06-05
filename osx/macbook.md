@@ -44,6 +44,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
     brew install nodejs
     curl http://npmjs.org/install.sh | sh 
     npm install recess uglify-js jshint -g
+    npm install less --global
 
     # install zsh
     brew install zsh
