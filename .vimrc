@@ -23,13 +23,21 @@ set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=*/coverage/*
 
+
+" Disable stupid backup and swap files - they trigger too many events
+" for file system watchers
 set nobackup
 set nowritebackup
 set noswapfile
+
+
+" make yank copy to the global system clipboard
 set clipboard=unnamed
+
 
 " Improving code completion
 set completeopt=longest,menuone
+
 
 " found here: http://stackoverflow.com/a/2170800/70778
 function! OmniPopup(action)
@@ -45,21 +53,26 @@ endfunction
 inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
 inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 
+
 " Quicksave command
 noremap <C-Z> :update<CR>
 vnoremap <C-Z> <C-C>:update<CR>
 inoremap <C-Z> <C-O>:update<CR>
 
+
 " Quick quit command
 noremap <Leader>e :quit<CR>
+
 
 " Bind nohl
 noremap <C-n> :nohl<CR>
 vnoremap <C-n> :nohl<CR>
 inoremap <C-n> :nohl<CR>
 
+
 set history=700
 set undolevels=700
+
 
 set tabstop=4
 set softtabstop=4
@@ -79,7 +92,7 @@ set tw=79  " width of document (used by gd)
 set fo-=t  " don't automatically wrap text when typing
 set number " show line numbers
 
-"
+
 " center the cursor vertically
 :nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
 
@@ -87,6 +100,7 @@ set number " show line numbers
 " easier formatting of paragraphs
 vmap Q gq
 nmap Q gqap
+
 
 " Settings for python-mode
 " =========================
