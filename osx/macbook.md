@@ -40,6 +40,9 @@ This document shall be a list of notes so that I remember all steps taken in ord
     brew install meld
     brew install libyaml
 
+    # Fixing copy and paste bug in tmux / vim
+    brew install reattach-to-user-namespace
+
     # needed for twitter bootstrap
     brew install nodejs
     curl http://npmjs.org/install.sh | sh 
