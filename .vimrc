@@ -145,7 +145,6 @@ vnoremap <Leader>s :sort<CR>
 " ================
 vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
-inoremap kj <Esc>  " the smash escape
 map <Leader>a ggVG  " select all
 
 " Fixing the copy & paste madness

@@ -22,6 +22,8 @@ This document shall be a list of notes so that I remember all steps taken in ord
 * Install Graphviz: http://www.graphviz.org/Download_macos.php
 * Install DiffMerge http://sourcegear.com/diffmerge/downloads.php
 * Install PyGTK http://macpkg.sourceforge.net/
+* Install PCKeyboardHack http://pqrs.org/macosx/keyremap4macbook/extra.html
+* Remap CAPS LOCK to ESC: http://stackoverflow.com/questions/127591/using-caps-lock-as-esc-in-mac-os-x
 
 ## In terminal::
 
