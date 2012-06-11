@@ -70,6 +70,11 @@ This document shall be a list of notes so that I remember all steps taken in ord
 	export WORKON_HOME=~/Envs
 	source /usr/local/bin/virtualenvwrapper.sh
 
+    # install ipython notebook prerequisites
+    sudo easy_install readline pyzmq pygments tornado
+    sudo easy_install https://github.com/ipython/ipython/tarball/master
+
+
 ## Create symlinks to files
 
     cd $HOME
@@ -80,7 +85,6 @@ This document shall be a list of notes so that I remember all steps taken in ord
 ## In terminal::
 
 	# install global packages used by all virtualenvs
-	sudo pip install ipython
 	sudo pip install ipdb
 	sudo pip install mysql-python
 	sudo pip install pillow
