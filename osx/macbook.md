@@ -47,7 +47,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
 
     # needed for twitter bootstrap
     brew install nodejs
-    curl http://npmjs.org/install.sh | sh 
+    curl http://npmjs.org/install.sh | sh
     npm install recess uglify-js jshint -g
     npm install less --global
 
@@ -55,6 +55,12 @@ This document shall be a list of notes so that I remember all steps taken in ord
     brew install zsh
     wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 
+    # I use the virtualenvwrapper plugin that comes with oh-my-zsh
+    # It depends on readlink which is different on OSX than on Ubuntu but
+    # coreutils contains greadlink which has the expected functionality
+    # so I replace the OSX readlink with greadlink via a symlink.
+    brew install coreutils
+    mkdir -p ~/bin && cd ~/bin && ln -s `which greadlink` readlink
 
     # install fabric completion
     brew install bash-completion
