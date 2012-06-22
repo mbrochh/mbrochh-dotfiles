@@ -15,8 +15,6 @@ This document shall be a list of notes so that I remember all steps taken in ord
   * Also install the PreferencePane, comes with the same package
   * Start MySQL Server
   * Change root password: http://dev.mysql.com/doc/refman/5.5/en/resetting-permissions.html
-* Install PostgreSQL: http://www.postgresql.org/download/macosx/ (see notes
-  about sysctl.conf in README before installing and reboot)
 * Install pgadmin3: http://pgadmin.org/download/macosx.php
 * Install Sequel Pro: http://www.sequelpro.com/download/
 * Install Graphviz: http://www.graphviz.org/Download_macos.php
@@ -31,6 +29,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
     /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
 
     # install useful tools
+    brew update
     brew install git
     brew install autojump
     brew install graphviz
@@ -80,6 +79,17 @@ This document shall be a list of notes so that I remember all steps taken in ord
     sudo easy_install readline pyzmq pygments tornado
     sudo easy_install https://github.com/ipython/ipython/tarball/master
 
+    # install postgresql and postgis
+    brew install postgresql
+    brew install postgis
+    brew install gdal
+    brew install libgeoip
+    initdb /usr/local/var/postgres
+
+    # BEWARE! PATHS MIGHT BE DIFFERENT FOR YOU
+    cp /usr/local/Cellar/postgresql/9.1.4/homebrew.mxcl.postgresql.plist ~/Library/LaunchAgents
+    launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+    pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
 
 ## Create symlinks to files
 
