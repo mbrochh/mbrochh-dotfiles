@@ -10,7 +10,8 @@ This document shall be a list of notes so that I remember all steps taken in ord
 * Install Skype
 
 ## In Browser
-* Install MacVim: http://code.google.com/p/macvim/
+* Install iTerm2: http://www.iterm2.com/
+* Download Solarized Dark Theme: https://code.google.com/p/iterm2/wiki/ColorGallery
 * Install MySQL: http://www.mysql.com/downloads/mysql/
   * Also install the PreferencePane, comes with the same package
   * Start MySQL Server
