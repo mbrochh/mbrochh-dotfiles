@@ -19,3 +19,6 @@
 [submodule "submodules/fabric-completion"]
 	path = submodules/fabric-completion
 	url = git://github.com/underself/fabric-completion.git
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git

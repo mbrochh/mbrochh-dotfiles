@@ -12,7 +12,7 @@
       log1 = log --pretty=oneline --abbrev-commit
 	  lg = log --graph --pretty=format:'%Cred%h..%Creset - %s %Cgreen(%cr)%Creset - %an' --abbrev-commit --date=relative
 [merge]
-      tool = diffmerge
+	tool = vimdiff
 [rerere]
       enabled = true
 [core]

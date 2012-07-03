@@ -42,3 +42,9 @@ export LANG="en_US"
 if [ -d "$HOME/bin" ] ; then
     export PATH="$HOME/bin:$PATH"
 fi
+
+export PATH=/Library/Frameworks/UnixImageIO.framework/Programs:$PATH
+export PATH=/Library/Frameworks/PROJ.framework/Programs:$PATH
+export PATH=/Library/Frameworks/GEOS.framework/Programs:$PATH
+export PATH=/Library/Frameworks/SQLite3.framework/Programs:$PATH
+export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
