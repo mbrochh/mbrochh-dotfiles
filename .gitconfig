@@ -12,7 +12,7 @@
       log1 = log --pretty=oneline --abbrev-commit
 	  lg = log --graph --pretty=format:'%Cred%h..%Creset - %s %Cgreen(%cr)%Creset - %an' --abbrev-commit --date=relative
 [merge]
-	tool = vimdiff
+	tool = fugitive
 [rerere]
       enabled = true
 [core]
@@ -28,3 +28,5 @@
 	  email = mbrochh@gmail.com
 [http]
 	sslverify = false
+[mergetool "fugitive"]
+	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
