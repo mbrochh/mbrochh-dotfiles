@@ -161,6 +161,7 @@ imap <C-v> <Esc><C-v>a
 " =========================
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
+map <Leader>w :%s/\s\+$//
 
 " Color scheme
 " =============
