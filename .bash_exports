@@ -1,3 +1,9 @@
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH
+# Include user's bin folder.
+if [ -d "$HOME/bin" ] ; then
+    export PATH="$HOME/bin:$PATH"
+fi
+
 # Git
 export GIT_SSL_NO_VERIFY=true
 
@@ -38,13 +44,13 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
 
-# Include user's bin folder.
-if [ -d "$HOME/bin" ] ; then
-    export PATH="$HOME/bin:$PATH"
-fi
-
 export PATH=/Library/Frameworks/UnixImageIO.framework/Programs:$PATH
 export PATH=/Library/Frameworks/PROJ.framework/Programs:$PATH
 export PATH=/Library/Frameworks/GEOS.framework/Programs:$PATH
 export PATH=/Library/Frameworks/SQLite3.framework/Programs:$PATH
 export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
+
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+export WORKON_HOME=$HOME/Envs
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true

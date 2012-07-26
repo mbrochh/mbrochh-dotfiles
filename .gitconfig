@@ -9,8 +9,8 @@
       ci = commit
       co = checkout
       br = branch --all
-      log1 = log --pretty=oneline --abbrev-commit
-	  lg = log --graph --pretty=format:'%Cred%h..%Creset - %s %Cgreen(%cr)%Creset - %an' --abbrev-commit --date=relative
+      lgn = log --pretty=oneline --abbrev-commit --show-notes=*
+      lg = log --graph --pretty=format:'%Cred%h..%Creset - %s %Cgreen(%cr)%Creset - %an' --abbrev-commit --date=relative
 [merge]
 	tool = fugitive
 [rerere]

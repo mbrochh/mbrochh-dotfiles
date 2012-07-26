@@ -2,6 +2,33 @@
 
 This document shall be a list of notes so that I remember all steps taken in order to get up to development speed with my Macbook Pro.
 
+## After installing Mountain Lion::
+
+* Login, download and install latest Command Line Tools: http://adcdownload.apple.com/ios/ios_simulator__resigned/cltools_mountainliondp2_march12.dmg
+* Download latest version of Parallels: http://www.parallels.com/download/build/desktop/
+
+    brew update
+    brew uninstall zsh
+    brew install zsh
+    brew uninstall python
+    brew install python
+    sudo easy_install-2.7 pip
+    sudo easy_install mercurial
+    sudo pip install virtualenv
+    sduo pip install virtualenvwrapper
+    sudo touch /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/distutils/__init__.py
+    sudo pip install psycopg2
+    sudo pip install mysql-python
+    sudo pip install PIL
+
+* set PATH to this:
+
+    export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH
+    # Include user's bin folder.
+    if [ -d "$HOME/bin" ] ; then
+        export PATH="$HOME/bin:$PATH"
+    fi
+
 ## In App Store:
 
 * Install XCode (Important!)
@@ -41,6 +68,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
     brew install ghostscript
     brew install meld
     brew install libyaml
+    brew install stunnel
 
     # Fixing copy and paste bug in tmux / vim
     brew install reattach-to-user-namespace
@@ -81,6 +109,8 @@ This document shall be a list of notes so that I remember all steps taken in ord
     sudo easy_install https://github.com/ipython/ipython/tarball/master
 
     # install postgresql and postgis
+    # I couldn't get postgis working like this, had to download and install the
+    # packages from somewhere else
     brew install postgresql
     brew install postgis
     brew install gdal
