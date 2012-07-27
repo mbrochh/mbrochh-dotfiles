@@ -7,6 +7,8 @@ This document shall be a list of notes so that I remember all steps taken in ord
 * Login, download and install latest Command Line Tools: http://adcdownload.apple.com/ios/ios_simulator__resigned/cltools_mountainliondp2_march12.dmg
 * Download latest version of Parallels: http://www.parallels.com/download/build/desktop/
 
+Then reinstall a bunch of things:
+
     brew update
     brew uninstall zsh
     brew install zsh
@@ -21,7 +23,7 @@ This document shall be a list of notes so that I remember all steps taken in ord
     sudo pip install mysql-python
     sudo pip install PIL
 
-* set PATH to this:
+Set PATH to this:
 
     export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH
     # Include user's bin folder.
