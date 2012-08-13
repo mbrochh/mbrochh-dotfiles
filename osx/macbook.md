@@ -61,6 +61,7 @@ Set PATH to this:
 
     # install useful tools
     brew update
+    brew install wget
     brew install git
     brew install autojump
     brew install graphviz
