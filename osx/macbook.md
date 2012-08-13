@@ -34,6 +34,7 @@ Set PATH to this:
 ## In App Store:
 
 * Install XCode (Important!)
+* Install Postgres.app (https://postgresapp.com)
 * Install Dropbox
 * Install Evernote
 * Install Skype
@@ -109,20 +110,6 @@ Set PATH to this:
     # install ipython notebook prerequisites
     sudo easy_install readline pyzmq pygments tornado
     sudo easy_install https://github.com/ipython/ipython/tarball/master
-
-    # install postgresql and postgis
-    # I couldn't get postgis working like this, had to download and install the
-    # packages from somewhere else
-    brew install postgresql
-    brew install postgis
-    brew install gdal
-    brew install libgeoip
-    initdb /usr/local/var/postgres
-
-    # BEWARE! PATHS MIGHT BE DIFFERENT FOR YOU
-    cp /usr/local/Cellar/postgresql/9.1.4/homebrew.mxcl.postgresql.plist ~/Library/LaunchAgents
-    launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-    pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
 
 ## Create symlinks to files
 
