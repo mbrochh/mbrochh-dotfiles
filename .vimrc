@@ -59,9 +59,9 @@ inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 
 
 " Quicksave command
-noremap <C-Z> :update<CR>
-vnoremap <C-Z> <C-C>:update<CR>
-inoremap <C-Z> <C-O>:update<CR>
+noremap <C-W> :update<CR>
+vnoremap <C-W> <C-C>:update<CR>
+inoremap <C-W> <C-O>:update<CR>
 
 
 " Quick quit command
