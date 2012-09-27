@@ -1,31 +1,31 @@
 [push]
-      default = upstream
+    default = upstream
 [color]
-      diff = auto
-      status = auto
-      branch = auto
+    diff = auto
+    status = auto
+    branch = auto
 [alias]
-      st = status
-      ci = commit
-      co = checkout
-      br = branch --all
-      lgn = log --pretty=oneline --abbrev-commit --show-notes=*
-      lg = log --graph --pretty=format:'%Cred%h..%Creset - %s %Cgreen(%cr)%Creset - %an' --abbrev-commit --date=relative
+    st = status
+    ci = commit
+    co = checkout
+    br = branch --all
+    lgn = log --pretty=oneline --abbrev-commit --show-notes=*
+    lg = log --graph --pretty=format:'%Cred%h..%Creset - %s %Cgreen(%cr)%Creset - %an' --abbrev-commit --date=relative
 [merge]
 	tool = fugitive
 [rerere]
-      enabled = true
+    enabled = true
 [core]
-      editor = vim
-	  excludesfile = ~/.gitignore_global
+    editor = vim
+	excludesfile = ~/.gitignore_global
 [giggle]
-	  main-window-maximized = true
-	  main-window-geometry = 0x0+0+0
-	  history-view-vpane-position = 374
-	  main-window-view = HistoryView
+	main-window-maximized = true
+	main-window-geometry = 0x0+0+0
+	history-view-vpane-position = 374
+	main-window-view = HistoryView
 [user]
-	  name = Martin Brochhaus
-	  email = mbrochh@gmail.com
+	name = Martin Brochhaus
+	email = mbrochh@gmail.com
 [http]
 	sslverify = false
 [mergetool "fugitive"]
