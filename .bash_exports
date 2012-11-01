@@ -28,7 +28,7 @@ fi
 # MySQL
 if [ -d "/usr/local/mysql/bin" ] ; then
     export PATH=$PATH:/usr/local/mysql/bin:$HOME/bin
-    export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/mysql/lib/
+    # export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/mysql/lib/
 fi
 
 
@@ -55,3 +55,5 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export WORKON_HOME=$HOME/Envs
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"

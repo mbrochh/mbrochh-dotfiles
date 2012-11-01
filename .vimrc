@@ -1,7 +1,7 @@
 set encoding=utf-8
 autocmd! bufwritepost .vimrc source %
 call pathogen#infect()
-
+ 
 filetype off
 filetype plugin indent on
 syntax on
@@ -59,10 +59,10 @@ inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 
 
 " Quicksave command
-noremap <C-W> :update<CR>
-vnoremap <C-W> <C-C>:update<CR>
-inoremap <C-W> <C-O>:update<CR>
-
+noremap <Leader>w :update<CR>
+vnoremap <Leader>w <C-C>:update<CR>
+inoremap <Leader>w <C-O>:update<CR>
+      
 
 " Quick quit command
 noremap <Leader>e :quit<CR>
@@ -161,7 +161,7 @@ imap <C-v> <Esc><C-v>a
 " =========================
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
-map <Leader>w :%s/\s\+$//
+map <Leader>x :%s/\s\+$//
 
 " Color scheme
 " =============
