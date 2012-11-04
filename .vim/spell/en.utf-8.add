@@ -111,3 +111,6 @@ webfactional
 django
 sitename
 Webfaction's
+blocktrans
+endblocktrans
+i18n

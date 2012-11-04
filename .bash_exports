@@ -28,7 +28,7 @@ fi
 # MySQL
 if [ -d "/usr/local/mysql/bin" ] ; then
     export PATH=$PATH:/usr/local/mysql/bin:$HOME/bin
-    # export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/mysql/lib/
+    export DYLD_LIBRARY_PATH=/usr/local/mysql-5.5.19-osx10.6-x86_64/lib:$DYLD_LIBRARY_PATH
 fi
 
 
