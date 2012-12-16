@@ -119,6 +119,11 @@ let g:pymode_syntax_builtin_funcs = 0
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 
+" Settings for vim-jedi
+" =====================
+let g:jedi#related_names_command = "<leader>z"
+
+
 " Settings for vim-powerline
 " ===========================
 set laststatus=2
