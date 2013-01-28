@@ -106,28 +106,17 @@ vmap Q gq
 nmap Q gqap
 
 
-" Settings for python-mode
-" =========================
-map <Leader>g :call RopeGotoDefinition()<CR>
-let ropevim_enable_shortcuts = 1
-let g:pymode_rope_goto_def_newwin = "vnew"
-let g:pymode_rope_extended_complete = 1
-let g:pymode_breakpoint = 0
-let g:pymode_syntax = 1
-let g:pymode_syntax_builtin_objs = 0
-let g:pymode_syntax_builtin_funcs = 0
-map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
-
-
-" Settings for vim-jedi
+" Settings for jedi-vim
 " =====================
 let g:jedi#related_names_command = "<leader>z"
+map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 
 " Settings for vim-powerline
 " ===========================
 set laststatus=2
 " let g:Powerline_symbols = 'fancy'
+
 
 " Settings for vim-markdown
 " ==========================
@@ -138,6 +127,7 @@ set nofoldenable
 " ===================
 let g:ctrlp_max_height = 30
 
+"
 " Movement
 " =========
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
@@ -150,11 +140,13 @@ map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
 vnoremap <Leader>s :sort<CR>
 
+
 " Custom mappings
 " ================
 vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
 map <Leader>a ggVG  " select all
+
 
 " Fixing the copy & paste madness
 " ================================
@@ -162,11 +154,13 @@ vmap <C-y> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call
 nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 imap <C-v> <Esc><C-v>a
 
+
 " Show trailing whitespace
 " =========================
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 map <Leader>x :%s/\s\+$//
+
 
 " Color scheme
 " =============
