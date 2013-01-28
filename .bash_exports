@@ -33,23 +33,25 @@ fi
 
 
 # PostgreSQL
-if [ -d "/Library/PostgreSQL/9.1/bin" ] ; then
-    export PATH=/Library/PostgreSQL/9.1/bin:$PATH
-    export PGDATA=/Library/PostgreSQL/9.1/data/
-fi
+#if [ -d "/Library/PostgreSQL/9.1/bin" ] ; then
+#    export PATH=/Library/PostgreSQL/9.1/bin:$PATH
+#    export PGDATA=/Library/PostgreSQL/9.1/data/
+#fi
 
+#export PATH=/Library/Frameworks/UnixImageIO.framework/Programs:$PATH
+#export PATH=/Library/Frameworks/PROJ.framework/Programs:$PATH
+#export PATH=/Library/Frameworks/GEOS.framework/Programs:$PATH
+#export PATH=/Library/Frameworks/SQLite3.framework/Programs:$PATH
+#export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
+
+export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
+export POSTGIS_SQL_PATH=/Applications/Postgres.app/Contents/MacOS/share/extension
 
 # Setting for the new UTF-8 terminal support in Lion
 export LC_CTYPE="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
-
-export PATH=/Library/Frameworks/UnixImageIO.framework/Programs:$PATH
-export PATH=/Library/Frameworks/PROJ.framework/Programs:$PATH
-export PATH=/Library/Frameworks/GEOS.framework/Programs:$PATH
-export PATH=/Library/Frameworks/SQLite3.framework/Programs:$PATH
-export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
 
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export WORKON_HOME=$HOME/Envs
