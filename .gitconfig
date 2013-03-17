@@ -5,6 +5,7 @@
     status = auto
     branch = auto
 [alias]
+    d = diff
     br = branch --all
     ci = commit
     co = checkout

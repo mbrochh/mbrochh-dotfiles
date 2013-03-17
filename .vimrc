@@ -109,6 +109,8 @@ nmap Q gqap
 " Settings for jedi-vim
 " =====================
 let g:jedi#related_names_command = "<leader>z"
+let g:jedi#popup_on_dot = 0
+let g:jedi#popup_select_first = 0
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 
@@ -169,6 +171,7 @@ color wombat256mod
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=233
+map <Leader>v :source ~/.vimrc
 
 " source ~/.vim/vimrc/vimrc_python.vim
 " source ~/.vim/bundle/pydiction/vimrc_pydiction.vim
