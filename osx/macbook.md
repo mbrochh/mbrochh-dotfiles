@@ -57,7 +57,7 @@ Set PATH to this:
 ## In terminal::
 
     # install homebrew
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
+    ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
     # install useful tools
     brew update
@@ -75,6 +75,7 @@ Set PATH to this:
     brew install stunnel
 
     # Fixing copy and paste bug in tmux / vim
+    brew install tmux
     brew install reattach-to-user-namespace
 
     # needed for twitter bootstrap

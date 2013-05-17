@@ -31,3 +31,6 @@
 [submodule ".vim/bundle/jedi-vim"]
 	path = .vim/bundle/jedi-vim
 	url = git://github.com/davidhalter/jedi-vim.git
+[submodule ".vim/bundle/CoVim"]
+	path = .vim/bundle/CoVim
+	url = git://github.com/FredKSchott/CoVim.git
