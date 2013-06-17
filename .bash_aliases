@@ -10,17 +10,28 @@ alias ll='ls -alF'  # everything with extra info as a list
 alias lsd='ls -l | grep "^d"'  # only directories as a list
 
 
-# Shortcuts
+# Personal shortcuts
 alias e="cd ~/Envs"
 alias f="cd ~/Forks"
 alias m="cd ~/mbrochh-dotfiles"
 alias p="cd ~/Projects"
 alias r="cd ~/Repos"
-
 alias c="clear"
-alias g="git"
-alias v="vim"
 alias sbrc="source ~/.bashrc"
+alias v="vim"
+
+# Git related shortcuts
+alias g="git"
+alias ga="git add ."
+alias gst="git st"
+alias gps="git push"
+alias gpl="git pull"
+alias gc="git commit"
+alias gl="git lg"
+
+# Django related shortcuts
+alias mprs="./manage.py runserver"
+alias mpm="./manage.py migrate"
 
 
 # Always use color output for `ls`
