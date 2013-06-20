@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/CoVim"]
 	path = .vim/bundle/CoVim
 	url = git://github.com/FredKSchott/CoVim.git
+[submodule ".vim/bundle/vim-multiple-cursors"]
+	path = .vim/bundle/vim-multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
