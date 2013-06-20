@@ -69,10 +69,7 @@ noremap <Leader>e :quit<CR>
 
 
 " Bind nohl
-noremap <C-n> :nohl<CR>
-vnoremap <C-n> :nohl<CR>
-inoremap <C-n> :nohl<CR>
-
+noremap <Leader>h :nohl<CR>
 
 set history=700
 set undolevels=700
