@@ -1,6 +1,5 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh 
-source $HOME/.bash_exports
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -32,5 +31,8 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git autojump python virtualenvwrapper)
 
+source $HOME/.bash_exports
 source $ZSH/oh-my-zsh.sh
 setopt nocorrectall
+
+source $HOME/.bash_aliases
