@@ -4,9 +4,6 @@
 [submodule ".vim/bundle/vim-powerline"]
 	path = .vim/bundle/vim-powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
-[submodule "submodules/fabric-completion"]
-	path = submodules/fabric-completion
-	url = git://github.com/underself/fabric-completion.git
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
@@ -19,18 +16,12 @@
 [submodule ".vim/bundle/vim-flake8"]
 	path = .vim/bundle/vim-flake8
 	url = https://github.com/nvie/vim-flake8
-[submodule ".vim/bundle/zencoding-vim"]
-	path = .vim/bundle/zencoding-vim
-	url = git://github.com/mattn/zencoding-vim.git
 [submodule ".vim/bundle/django.vim"]
 	path = .vim/bundle/django.vim
 	url = git://github.com/vim-scripts/django.vim.git
 [submodule ".vim/bundle/jedi-vim"]
 	path = .vim/bundle/jedi-vim
 	url = git://github.com/davidhalter/jedi-vim.git
-[submodule ".vim/bundle/CoVim"]
-	path = .vim/bundle/CoVim
-	url = git://github.com/FredKSchott/CoVim.git
 [submodule ".vim/bundle/vim-multiple-cursors"]
 	path = .vim/bundle/vim-multiple-cursors
 	url = git@github.com:terryma/vim-multiple-cursors.git
