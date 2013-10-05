@@ -119,7 +119,7 @@ nmap Q gqap
 
 " Settings for jedi-vim
 " =====================
-let g:jedi#related_names_command = "<leader>z"
+let g:jedi#usages_command = "<leader>n"
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
@@ -149,8 +149,8 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
-map <Leader>n <esc>:tabprevious<CR>
-map <Leader>m <esc>:tabnext<CR>
+map <Leader>, <esc>:tabprevious<CR>
+map <Leader>. <esc>:tabnext<CR>
 vnoremap <Leader>s :sort<CR>
 
 
