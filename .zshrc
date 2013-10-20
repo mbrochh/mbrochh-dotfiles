@@ -36,3 +36,6 @@ source $ZSH/oh-my-zsh.sh
 setopt nocorrectall
 
 source $HOME/.bash_aliases
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

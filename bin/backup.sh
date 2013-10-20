@@ -1,31 +1,28 @@
 #!/bin/sh
-# My internal drive shall be Drive01.
-# My Passport (Drive02) is a 500GB drive which extends Drive01
-# Elements (Drive03) is the 2TB drive that stays at home
-# TODO: Elements (Drive04) is another 2TB drive that stays at home
+# My internal SSD is not backed up. Application data can easily be installed
+# again and all important files in the homefolder are backed up on github /
+# dropbox.
 
-# Drive01 + Drive02 must be smaller than Drive03 (preferrably only half the size)
-# Drive04 must be equal to or larger than Drive03
+# My internal drive shall be DRIVE01. 
+# My extrnal Passport drive (DRIVE02) is a 500GB drive which extends DRIVE01
+# Elements (DRIVE03) is the 2TB drive that stays at home
+# Elements (DRIVE04) is another 2TB drive that stays at a different place from
+# DRIVE03 (in case home catches fire).
 
-# Chosen folders from Drive01 shall be rsynced to Drive03
-# Drive02 shall be mirrored to Drive03
-# Drive03 is a git repo and keeps track of all changes with every backup run
+# DRIVE01 + DRIVE02 must be smaller than DRIVE03 (preferrably only half the size)
+# DRIVE04 must be equal to or larger than DRIVE03
 
-# Prepare Drive03 / 04:
-# sudo rm -rf .Trashes 
-# touch .Trashes
-# sudo rm -rf .Spotlight-V100
-# touch .metadata_never_index
-# cd .fseventsd
-# rm *
-# touch no_log
-# git init
-# git commit -am "Initial commit"
+# Chosen folders from DRIVE01 shall be rsynced to DRIVE03
+# DRIVE02 shall be mirrored to DRIVE03
+# DRIVE03 shall be mirrored to DRIVE04 
 
 DRIVE01="/Volumes/Macintosh HD"
 DRIVE02="/Volumes/My Passport"
 DRIVE03="/Volumes/Elements"
+DRIVE04="/Volumes/Elements 2"
 
-rsync -av --delete --exclude="/.*" "$DRIVE01/Users/martin/Pictures/iPhoto Library/" "$DRIVE03/Macintosh HD/Users/martin/Pictures/iPhoto Library/"
-rsync -av --delete --exclude="/.*" "$DRIVE01/Users/martin/Music/iTunes/" "$DRIVE03/Macintosh HD/Users/martin/Music/iTunes/"
+rsync -av --delete --exclude="/.*" "$DRIVE01/Music/" "$DRIVE03/Macintosh HD/Music/"
+rsync -av --delete --exclude="/.*" "$DRIVE01/Pictures/" "$DRIVE03/Macintosh HD/Pictures/"
+rsync -av --delete --exclude="/.*" "$DRIVE01/Videos/" "$DRIVE03/Macintosh HD/Videos/"
 rsync -av --delete --exclude="/.*" "$DRIVE02/" "$DRIVE03/My Passport/"
+rsync -av --delete --exclude="/.*" "$DRIVE03/" "$DRIVE04/"

@@ -17,6 +17,7 @@ let g:html_indent_style1 = "inc"
 " General option
 " ===============
 let mapleader = "," " rebind <Leader> key
+nnoremap . <NOP>
 set wildmode=list:longest " make TAB behave like in a shell
 set autoread " reload file when changes happen in other editors
 set tags=./tags
