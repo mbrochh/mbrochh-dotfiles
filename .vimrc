@@ -134,7 +134,7 @@ set laststatus=2
 
 " Settings for vim-markdown
 " ==========================
-set nofoldenable
+let g:vim_markdown_folding_disabled=1
 
 
 " Settings for ctrlp

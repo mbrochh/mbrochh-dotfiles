@@ -21,6 +21,7 @@ DRIVE02="/Volumes/My Passport"
 DRIVE03="/Volumes/Elements"
 DRIVE04="/Volumes/Elements 2"
 
+rsync -av --delete --exclude="/.*" "$DRIVE01/Documents/" "$DRIVE03/Macintosh HD/Documents/"
 rsync -av --delete --exclude="/.*" "$DRIVE01/Music/" "$DRIVE03/Macintosh HD/Music/"
 rsync -av --delete --exclude="/.*" "$DRIVE01/Pictures/" "$DRIVE03/Macintosh HD/Pictures/"
 rsync -av --delete --exclude="/.*" "$DRIVE01/Videos/" "$DRIVE03/Macintosh HD/Videos/"

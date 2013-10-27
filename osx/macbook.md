@@ -140,6 +140,12 @@ colors. Therefore you might need to build it from scratch::
     make   # I got a lot of warnings here, but they don't seem to matter
     sudo make install
 
+## Disable .DS_Store creation
+
+See http://support.apple.com/kb/HT1629
+
+    defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
 ## Misc
 
 * If you need graphviz in one of your venvs, try ``pip install pygraphviz``.
