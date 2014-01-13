@@ -1,7 +1,7 @@
 set encoding=utf-8
 autocmd! bufwritepost .vimrc source %
 call pathogen#infect()
- 
+
 filetype off
 filetype plugin indent on
 syntax on
@@ -186,6 +186,18 @@ color wombat256mod
 set colorcolumn=80
 highlight ColorColumn ctermbg=233
 map <Leader>v :source ~/.vimrc
+
+" Compile bootstrap.css when saving a .less file
+func! s:CompileLess()
+    lcd %:p:h
+    let static_dir = finddir('static', ';')
+    let l:cmd = "cd " . l:static_dir . " && lessc css/bootstrap.less css/bootstrap.css"
+    let l:errs = system(l:cmd)
+    if (!empty(l:errs))
+        echo l:errs
+    endif
+endfunc
+autocmd! BufWritePost,FileWritePost *.less call s:CompileLess()
 
 " source ~/.vim/vimrc/vimrc_python.vim
 " source ~/.vim/bundle/pydiction/vimrc_pydiction.vim

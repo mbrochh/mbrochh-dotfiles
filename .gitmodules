@@ -12,7 +12,7 @@
 	url = git://github.com/pangloss/vim-javascript.git
 [submodule ".vim/bundle/vim-less"]
 	path = .vim/bundle/vim-less
-	url = git://github.com/groenewege/vim-less.git
+	url = https://github.com/groenewege/vim-less.git
 [submodule ".vim/bundle/vim-flake8"]
 	path = .vim/bundle/vim-flake8
 	url = https://github.com/nvie/vim-flake8
@@ -28,3 +28,12 @@
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule ".vim/bundle/vim-css-color"]
+	path = .vim/bundle/vim-css-color
+	url = https://github.com/skammer/vim-css-color.git
+[submodule ".vim/bundle/vim-css3-syntax"]
+	path = .vim/bundle/vim-css3-syntax
+	url = https://github.com/hail2u/vim-css3-syntax
+[submodule ".vim/bundle/vim-lesscss"]
+	path = .vim/bundle/vim-lesscss
+	url = https://github.com/vitalk/vim-lesscss.git
