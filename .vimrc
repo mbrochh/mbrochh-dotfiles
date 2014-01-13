@@ -181,6 +181,7 @@ map <Leader>x :%s/\s\+$//
 " =============
 set t_Co=256
 color wombat256mod
+" color mayansmoke
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=233
