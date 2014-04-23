@@ -25,6 +25,7 @@
 [submodule ".vim/bundle/vim-multiple-cursors"]
 	path = .vim/bundle/vim-multiple-cursors
 	url = git@github.com:terryma/vim-multiple-cursors.git
+    ignore = untracked
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
@@ -46,6 +47,7 @@
 [submodule ".vim/bundle/javacomplete"]
 	path = .vim/bundle/javacomplete
 	url = https://github.com/vim-scripts/javacomplete.git
+    ignore = untracked
 [submodule ".vim/bundle/vim-gradle"]
 	path = .vim/bundle/vim-gradle
 	url = https://github.com/tfnico/vim-gradle.git
