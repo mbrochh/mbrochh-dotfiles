@@ -43,3 +43,21 @@
 [submodule ".vim/bundle/delimitMate"]
 	path = .vim/bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule ".vim/bundle/javacomplete"]
+	path = .vim/bundle/javacomplete
+	url = https://github.com/vim-scripts/javacomplete.git
+[submodule ".vim/bundle/vim-gradle"]
+	path = .vim/bundle/vim-gradle
+	url = https://github.com/tfnico/vim-gradle.git
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule ".vim/bundle/vim-classpath"]
+	path = .vim/bundle/vim-classpath
+	url = https://github.com/tpope/vim-classpath.git
+[submodule ".vim/bundle/gradle-vim-syntastic-plugin"]
+	path = .vim/bundle/gradle-vim-syntastic-plugin
+	url = https://github.com/simonhicks/gradle-vim-syntastic-plugin.git
+[submodule ".vim/bundle/jshint2.vim"]
+	path = .vim/bundle/jshint2.vim
+	url = https://github.com/Shutnik/jshint2.vim.git

@@ -8,6 +8,9 @@ syntax on
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType java set completeopt-=preview
+autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
+autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 
 
 let g:html_indent_inctags = "html,body,head,tbody"
@@ -29,6 +32,11 @@ vnoremap <space> zA
 " DelimitMate
 " ===========
 let delimitMate_expand_cr = 1
+
+
+" Syntastic
+" =========
+let jshint2_save = 1
 
 
 " UltiSnips
