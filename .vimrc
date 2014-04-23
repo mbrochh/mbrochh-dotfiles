@@ -18,6 +18,12 @@ let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
 
+" Omnicomplete
+" ============
+inoremap <c-space> <C-x><C-o>
+inoremap <c-@> <C-x><C-o>
+
+
 " No bullshit folding magic
 " =========================
 set foldmethod=indent
