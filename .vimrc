@@ -18,10 +18,28 @@ let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
 
-" Omnicomplete
+" BEGIN things for Java development
+" =============================================================================
+
+" Syntastic
+" =========
+let jshint2_save = 1
+
+
+" Javacomplete
 " ============
-inoremap <c-space> <C-x><C-o>
-inoremap <c-@> <C-x><C-o>
+let $CLASS_ATH = ''
+let $CLASSPATH = $CLASSPATH . ":" . "/Users/martin/libGDXProjects/game1/src/desktop/build/libs/*"
+call javacomplete#SetSourcePath('/Users/martin/libGDXProjects/game1/src/')
+
+
+" END tings for Java development
+" =============================================================================
+
+
+" DelimitMate
+" ===========
+let delimitMate_expand_cr = 1
 
 
 " No bullshit folding magic
@@ -33,16 +51,6 @@ vnoremap <space> zA
 
 " When opening the file, unfold all. Fold all with zM
 " au BufRead * normal zR
-
-
-" DelimitMate
-" ===========
-let delimitMate_expand_cr = 1
-
-
-" Syntastic
-" =========
-let jshint2_save = 1
 
 
 " UltiSnips
@@ -82,8 +90,10 @@ set noswapfile
 set clipboard=unnamed
 
 
-" Improving code completion
+" Omnicomplete related stuff
 set completeopt=longest,menuone
+inoremap <c-space> <C-x><C-o>
+inoremap <c-@> <C-x><C-o>
 
 
 " found here: http://stackoverflow.com/a/2170800/70778
