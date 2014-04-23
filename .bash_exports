@@ -1,5 +1,13 @@
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH
-export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
+export PATH="/Users/martin/src/gradle-1.11/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH"
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+export PATH="$HOME/src/android-sdk-macosx/tools:$PATH"
+export PATH="$HOME/src/android-sdk-macosx/platform-tools:$PATH"
+export PATH="$HOME/src/gwt-2.6.0:$PATH"
+export ANDROID_HOME="$HOME/src/android-sdk-macosx/"
+export ANDROID_BIN="$HOME/src/android-sdk-macosx/tools/android:$PATH"
+
+
 # Include user's bin folder.
 if [ -d "$HOME/bin" ] ; then
     export PATH="$HOME/bin:$PATH"

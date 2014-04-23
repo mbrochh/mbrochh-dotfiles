@@ -5,13 +5,41 @@ call pathogen#infect()
 filetype off
 filetype plugin indent on
 syntax on
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+
 
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
+
+
+" No bullshit folding magic
+" =========================
+set foldmethod=indent
+set foldnestmax=2
+nnoremap <space> zA
+vnoremap <space> zA
+
+" When opening the file, unfold all. Fold all with zM
+" au BufRead * normal zR
+
+
+" DelimitMate
+" ===========
+let delimitMate_expand_cr = 1
+
+
+" UltiSnips
+" =========
+set runtimepath+=~/.vim/bundle/UltiSnips
+set runtimepath+=~/.vim/snippets
+let g:UltiSnipsSnippetsDir = "~/.vim/snippets/"
+let g:UltiSnipsSnippetDirectories = ['UltiSnips', 'snippets']
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 
 " General option

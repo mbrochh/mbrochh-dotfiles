@@ -14,6 +14,10 @@
     lgn = log --pretty=oneline --abbrev-commit --show-notes=*
     rh = reset --soft HEAD^
     st = status
+    pushom = push origin master:master
+    pushod = push origin develop:develop
+    pullom = pull origin master:master
+    pullod = pull origin develop:develop
 [merge]
 	tool = fugitive
 [rerere]
