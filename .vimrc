@@ -28,9 +28,14 @@ let jshint2_save = 1
 
 " Javacomplete
 " ============
-let $CLASS_ATH = ''
-let $CLASSPATH = $CLASSPATH . ":" . "/Users/martin/libGDXProjects/game1/src/desktop/build/libs/*"
-call javacomplete#SetSourcePath('/Users/martin/libGDXProjects/game1/src/')
+func! s:SetClasspath()
+    lcd %:p:h
+    let gradle_settings = findfile('settings.gradle', '.;')
+    let project_root = fnamemodify(gradle_settings, ":h")
+    call javacomplete#SetSourcePath(project_root)
+    let $CLASSPATH = $CLASSPATH . ":" . project_root . "/desktop/build/libs/*"
+endfunc
+autocmd VimEnter * call s:SetClasspath()
 
 
 " END tings for Java development
