@@ -1,6 +1,6 @@
 export PATH="/Users/martin/src/gradle-1.11/bin:$PATH"
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH"
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 export PATH="$HOME/src/android-sdk-macosx/tools:$PATH"
 export PATH="$HOME/src/android-sdk-macosx/platform-tools:$PATH"
 export PATH="$HOME/src/gwt-2.6.0:$PATH"
