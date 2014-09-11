@@ -258,7 +258,7 @@ func! s:CompileLess()
         echo l:errs
     endif
 endfunc
-autocmd! BufWritePost,FileWritePost *.less call s:CompileLess()
+" autocmd! BufWritePost,FileWritePost *.less call s:CompileLess()
 
 " source ~/.vim/vimrc/vimrc_python.vim
 " source ~/.vim/bundle/pydiction/vimrc_pydiction.vim

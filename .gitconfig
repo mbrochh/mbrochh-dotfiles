@@ -12,6 +12,7 @@
     dh = diff HEAD
     lg = log --graph --pretty=format:'%Cred%h..%Creset - %s %Cgreen(%cr)%Creset - %an' --abbrev-commit --date=relative
     lgn = log --pretty=oneline --abbrev-commit --show-notes=*
+    mnff = merge --no-ff
     rh = reset --soft HEAD^
     st = status
     pushom = push origin master:master

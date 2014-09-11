@@ -19,10 +19,11 @@ alias r="cd ~/Repos"
 alias c="clear"
 alias sbrc="source ~/.bashrc"
 alias v="vim"
+alias won="workon"
 
 # Git related shortcuts
 alias g="git"
-alias ga="git add ."
+alias ga="git add -A ."
 alias gst="git st"
 alias gps="git push"
 alias gpl="git pull"
