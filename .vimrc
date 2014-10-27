@@ -70,6 +70,9 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+" Tagbar
+" ======
+nmap <F8> :TagbarToggle<CR>
 
 " General option
 " ===============
@@ -250,10 +253,10 @@ map <Leader>v :source ~/.vimrc
 func! s:CompileLess()
     lcd %:p:h
     let static_dir = finddir('static', ';')
-    let l:cmd = "cd " . l:static_dir . " && lessc css/bootstrap.less css/bootstrap.css"
-    " let l:cmd2 = "cd " . l:static_dir . " && lessc css2/bootstrap.less css2/bootstrap.css"
+    " let l:cmd = "cd " . l:static_dir . " && lessc css/bootstrap.less css/bootstrap.css"
+    " let l:cmd = "cd " . l:static_dir . " && lessc css2/bootstrap.less css2/bootstrap.css"
+    let l:cmd = "cd " . l:static_dir . " && lessc css3/bootstrap.less css3/bootstrap.css"
     let l:errs = system(l:cmd)
-    " let l:errs = system(l:cmd2)
     if (!empty(l:errs))
         echo l:errs
     endif
