@@ -11,6 +11,7 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType java set completeopt-=preview
 autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
 autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+au BufRead,BufNewFile *.scss set filetype=scss.css
 
 
 let g:html_indent_inctags = "html,body,head,tbody"
@@ -253,15 +254,15 @@ map <Leader>v :source ~/.vimrc
 func! s:CompileLess()
     lcd %:p:h
     let static_dir = finddir('static', ';')
-    " let l:cmd = "cd " . l:static_dir . " && lessc css/bootstrap.less css/bootstrap.css"
+    let l:cmd = "cd " . l:static_dir . " && lessc css/bootstrap.less css/bootstrap.css"
     " let l:cmd = "cd " . l:static_dir . " && lessc css2/bootstrap.less css2/bootstrap.css"
-    let l:cmd = "cd " . l:static_dir . " && lessc css3/bootstrap.less css3/bootstrap.css"
+    " let l:cmd = "cd " . l:static_dir . " && lessc css3/bootstrap.less css3/bootstrap.css"
     let l:errs = system(l:cmd)
     if (!empty(l:errs))
         echo l:errs
     endif
 endfunc
-autocmd! BufWritePost,FileWritePost *.less call s:CompileLess()
+" autocmd! BufWritePost,FileWritePost *.less call s:CompileLess()
 
 " source ~/.vim/vimrc/vimrc_python.vim
 " source ~/.vim/bundle/pydiction/vimrc_pydiction.vim
