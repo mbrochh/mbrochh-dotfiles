@@ -79,10 +79,14 @@ Set PATH to this:
     brew install reattach-to-user-namespace
 
     # needed for twitter bootstrap
-    brew install nodejs
-    curl http://npmjs.org/install.sh | sh
+    # Better installation of node & npm: http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/
+
+    # Don't do this, do the above
+    # brew install nodejs
+    # curl http://npmjs.org/install.sh | sh
+
     npm install recess uglify-js jshint -g
-    npm install less --global
+    npm install less -g
 
     # install zsh
     brew install zsh
