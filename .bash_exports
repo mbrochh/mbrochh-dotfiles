@@ -1,5 +1,7 @@
 export NPM_PACKAGES="$HOME/.npm-global"
 export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 export PATH="/Users/martin/src/gradle-1.11/bin:$PATH"
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH"
