@@ -8,6 +8,7 @@ syntax on
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType java set completeopt-=preview
 autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
 autocmd Filetype java setlocal omnifunc=javacomplete#Complete
@@ -27,6 +28,7 @@ set grepprg=ack\ -k
 " Syntastic
 " =========
 let jshint2_save = 1
+let g:syntastic_javascript_checkers = ['eslint']
 
 
 " Javacomplete
@@ -52,10 +54,11 @@ let delimitMate_expand_cr = 1
 
 " No bullshit folding magic
 " =========================
-set foldmethod=indent
+set foldmethod=syntax
 set foldnestmax=2
 nnoremap <space> zA
 vnoremap <space> zA
+au BufRead * normal zR
 
 " When opening the file, unfold all. Fold all with zM
 " au BufRead * normal zR
