@@ -60,9 +60,6 @@
 [submodule ".vim/bundle/gradle-vim-syntastic-plugin"]
 	path = .vim/bundle/gradle-vim-syntastic-plugin
 	url = https://github.com/simonhicks/gradle-vim-syntastic-plugin.git
-[submodule ".vim/bundle/jshint2.vim"]
-	path = .vim/bundle/jshint2.vim
-	url = https://github.com/Shutnik/jshint2.vim.git
 [submodule ".vim/bundle/vim-ansible-yaml"]
 	path = .vim/bundle/vim-ansible-yaml
 	url = git://github.com/chase/vim-ansible-yaml.git
