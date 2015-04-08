@@ -22,10 +22,6 @@
 [submodule ".vim/bundle/jedi-vim"]
 	path = .vim/bundle/jedi-vim
 	url = git://github.com/davidhalter/jedi-vim.git
-[submodule ".vim/bundle/vim-multiple-cursors"]
-	path = .vim/bundle/vim-multiple-cursors
-	url = git@github.com:terryma/vim-multiple-cursors.git
-    ignore = untracked
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
