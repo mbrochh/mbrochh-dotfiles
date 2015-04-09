@@ -89,6 +89,9 @@ Set PATH to this:
 
     npm install recess uglify-js jshint -g
     npm install less -g
+    npm install -g eslint
+    npm install -g babel-eslint
+    npm install -g eslint-plugin-react
 
     # install zsh
     brew install zsh

@@ -25,11 +25,13 @@ set grepprg=ack\ -k
 " BEGIN things for Java development
 " =============================================================================
 
-" Syntastic
-" =========
+" Javascript
+" ==========
 let jshint2_save = 1
 let g:syntastic_javascript_checkers = ['eslint']
-
+let g:jsx_ext_required = 0
+set smarttab
+set cindent
 
 " Javacomplete
 " ============
