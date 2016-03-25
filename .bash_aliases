@@ -19,7 +19,7 @@ alias r="cd ~/Repos"
 alias c="clear"
 alias sbrc="source ~/.bashrc"
 alias v="vim"
-alias won="workon"
+alias wo="workon"
 
 # Git related shortcuts
 alias g="git"

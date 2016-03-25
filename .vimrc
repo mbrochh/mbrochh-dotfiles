@@ -14,12 +14,14 @@ autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
 autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 au BufRead,BufNewFile *.scss set filetype=scss.css
 
+let g:python_host_prog='/usr/bin/python'
 
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
 set grepprg=ack\ -k
+set smartcase
 
 
 " BEGIN things for Java development
@@ -209,10 +211,11 @@ let g:vim_markdown_initial_foldlevel=1
 " Settings for ctrlp
 " ===================
 let g:ctrlp_max_height = 30
-let g:ctrlp_user_command = [
-    \ '.git', 'cd %s && git ls-files . -co --exclude-standard',
-    \ 'find %s -type f'
-    \ ]
+"let g:ctrlp_user_command = [
+""    \ '.git', 'cd %s && git ls-files . -co --exclude-standard',
+""    \ 'find %s -type f'
+""    \ ]
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 "
 " Movement
