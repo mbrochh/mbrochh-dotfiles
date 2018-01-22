@@ -30,7 +30,7 @@ pip install yapf
 npm install -g yarn
 
 # Setting up atom
-apm install intantions busy-signal linter linter-ui-default autocomplete-python jsx-comment language-javascript-jsx prettier-atom python-yapf react sort-lines symbols-tree-view vim-mode-plus 
+apm install intantions busy-signal linter linter-ui-default autocomplete-python jsx-comment prettier-atom python-yapf react sort-lines symbols-tree-view vim-mode-plus atom-beautify highlight-selected autocomplete-modules hyperclick js-hyperclick pigments
 
 # Setup zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
@@ -52,3 +52,16 @@ chsh -s /usr/local/bin/zsh
 # Configure Atom > prettier-atom: Semicolons: Off
 # Configure Atom > prettier-atom: Trailing Comma: es5
 # Copy .tmux.conf from github
+
+# Manual:
+# Add Keymap to Atom:
+# 'atom-text-editor':
+#   'cmd-r': 'sort-lines:sort'
+
+# Add Snippets to Atom:
+# '.source.python':
+#  'Breakpoint':
+#    'prefix': 'bp'
+#    'body': 'import ipdb; ipdb.set_trace() # BREAKPOINT'
+
+
