@@ -4,11 +4,11 @@
 # add .gitconfig
 
 # Automates steps:
-# Install Homebrew
+# Install Homebrew and other core tools
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install node python git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt
-sudo gem install tmuxinator virtualbox pipenv
-pip2 install virtualenv virtualenvwrapper ipdb pillow
+pip2 install virtualenv virtualenvwrapper ipdb pillow pipenv
+sudo gem install tmuxinator
 
 # add stuff to .bash_profile:
 echo 'export LANG=en_US.UTF-8' >> ~/.bash_profile
