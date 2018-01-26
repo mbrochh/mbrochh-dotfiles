@@ -6,7 +6,7 @@
 # Automates steps:
 # Install Homebrew and other core tools
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install node python git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt
+brew install node python git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree
 pip2 install virtualenv virtualenvwrapper ipdb pillow pipenv
 sudo gem install tmuxinator
 
