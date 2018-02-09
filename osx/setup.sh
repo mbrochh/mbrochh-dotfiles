@@ -28,6 +28,7 @@ brew cask install alfred google-chrome firefox atom iterm2 caffeine skitch dropb
 # Installing tools
 pip install yapf
 npm install -g yarn
+npm install -g git-open
 
 # Setting up atom
 apm install intantions busy-signal linter linter-ui-default autocomplete-python jsx-comment prettier-atom python-yapf react sort-lines symbols-tree-view vim-mode-plus atom-beautify highlight-selected autocomplete-modules hyperclick js-hyperclick pigments relative-numbers
