@@ -41,7 +41,8 @@ chsh -s /usr/local/bin/zsh
 # Edit ~/.zshrc
 # Set ZSH_THEME="pygmalion"
 # Set plugins=(autojump git colored-man colorize github vagrant virtualenv pip python osx zsh-syntax-highlighting)
-# Add source ~/.bash_profile
+# Add "source ~/.bash_profile"
+# Add "source ~/.bash_aliases" (use file from osx/.bash_aliases)
 
 # Manual:
 # Configure Atom > python-yapf: Yapf Style: {based_on_style: google, column_limit: 79}
