@@ -14,6 +14,7 @@ sudo gem install tmuxinator
 echo 'export LANG=en_US.UTF-8' >> ~/.bash_profile
 echo 'export LC_ALL=en_US.UTF-8' >> ~/.bash_profile
 echo '' >> ~/.bash_profile
+echo 'export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"' >>~/.bash_profile
 echo 'export PATH="/usr/local/opt/python/libexec/bin:$PATH"' >>~/.bash_profile
 echo 'export PATH="/usr/local/opt/gettext/bin:$PATH"' >>~/.bash_profile
 echo '' >> ~/.bash_profile
