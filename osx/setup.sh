@@ -17,6 +17,7 @@ echo '' >> ~/.bash_profile
 echo 'export PATH="/usr/local/opt/python/libexec/bin:$PATH"' >>~/.bash_profile
 echo 'export PATH="/usr/local/opt/gettext/bin:$PATH"' >>~/.bash_profile
 echo '' >> ~/.bash_profile
+echo 'export VIRTUAL_ENV_DISABLE_PROMPT=' >>~/.bash_profile
 echo 'export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2' >>~/.bash_profile
 echo 'export WORKON_HOME=$HOME/.virtualenvs' >>~/.bash_profile
 echo 'export PIP_VIRTUALENV_BASE=$WORKON_HOME' >>~/.bash_profile
