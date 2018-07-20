@@ -33,6 +33,7 @@ alias gl="git lg"
 # Django related shortcuts
 alias mprs="./manage.py runserver"
 alias mpm="./manage.py migrate"
+alias pir="pipenv run"
 
 
 # Always use color output for `ls`
