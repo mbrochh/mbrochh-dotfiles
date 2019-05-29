@@ -1,1 +1,0 @@
-alias pir="pipenv run"
