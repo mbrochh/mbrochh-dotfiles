@@ -1,0 +1,21 @@
+{
+  "window.title": "${activeEditorMedium}",
+  "window.zoomLevel": 3,
+  "editor.rulers": [80, 120],
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/*.pyc": true,
+    "**/htmlcov": true,
+    "**/node_modules": true,
+    "**/old": true
+  },
+  "search.followSymlinks": false,
+  "python.venvPath": "~/.virtualenvs",
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": [
+    "--style",
+    "{based_on_style: google, allow_split_before_dict_value: False, column_limit: 79}"
+  ]
+}
