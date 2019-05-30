@@ -133,13 +133,17 @@ you can execute `workon`.
 
 Launch VSCode and activate `JavaScript`, `Typescript` and `Python`.
 
-Symlink `settings.json`:
+Symlink `settings.json` and `keybindings.json`:
 
 ```
 cd ~/Library/Application\ Support/Code/User/
 rm settings.json
-ln -s ~/Projects/mbrochh-dotfiles/src/vscode/settings.json
+rm keybindings.json
+ln -s ~/Projects/mbrochh-dotfiles/src/vscode/settings.json .
+ln -s ~/Projects/mbrochh-dotfiles/src/vscode/keybindings.json .
 ```
+
+The above assumes that you cloned this repo into `~/Projects/mbrochh-dotfiles/src/`.
 
 # Start Postgres App
 

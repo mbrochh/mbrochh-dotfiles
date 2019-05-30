@@ -1,6 +1,6 @@
 {
   "window.title": "${activeEditorMedium}",
-  "window.zoomLevel": 3,
+  "window.zoomLevel": 1,
   "editor.rulers": [80, 120],
   "editor.formatOnSave": true,
   "files.exclude": {
@@ -17,5 +17,7 @@
   "python.formatting.yapfArgs": [
     "--style",
     "{based_on_style: google, allow_split_before_dict_value: False, column_limit: 79}"
-  ]
+  ],
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.minimap.enabled": false
 }
