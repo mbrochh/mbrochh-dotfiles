@@ -36,7 +36,7 @@ Next you want to install Homebrew. See https://brew.sh/
 
 Now you can install all the software:
 
-`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree awscli`
+`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree awscli findutils`
 
 and
 
