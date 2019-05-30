@@ -1,6 +1,7 @@
 {
   "window.title": "${activeEditorMedium}",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
+  "editor.fontSize": 14,
   "editor.rulers": [80, 120],
   "editor.formatOnSave": true,
   "files.exclude": {
