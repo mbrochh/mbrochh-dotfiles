@@ -1,7 +1,7 @@
 {
   "window.title": "${activeEditorMedium}",
   "window.zoomLevel": 0,
-  "editor.fontSize": 14,
+  "editor.fontSize": 22,
   "editor.rulers": [80, 120],
   "editor.formatOnSave": true,
   "files.exclude": {
@@ -20,5 +20,14 @@
     "{based_on_style: google, allow_split_before_dict_value: False, column_limit: 79}"
   ],
   "workbench.startupEditor": "newUntitledFile",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }
