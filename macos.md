@@ -34,9 +34,41 @@ back into your home folder now!
 
 Next you want to install Homebrew. See https://brew.sh/
 
-Now you can install all the software:
+# Install Python and Node
 
-`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree awscli findutils`
+We need to install Python 3.6:
+
+`brew install --ignore-dependencies https://raw.githubusercontent.com/Homebrew/homebrew-core/f2a764ef944b1080be64bd88dca9a1d80130c558/Formula/python.rb`
+
+Now we need to make sure that Python 3.6 is mapped to `python`. And when we
+are at it, we can also make sure that `psql` is in the PATH.
+
+Add this to `~/.bash_profile`:
+
+```
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+```
+
+Now install Node:
+
+```
+brew install node
+npm -g install yarn
+```
+
+# Install awscli
+
+I ran into issues when installing awscli via Homebrew, so let's install it via
+pip instead:
+
+`sudo pip install awscli`
+
+# Install software via Homebrew
+
+Now that Python 3.6 is in place, you can install all kinds of other software:
+
+`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils`
 
 and
 
@@ -44,7 +76,8 @@ and
 
 # Install Dropbox & Cryptomator & Standard Notes
 
-I use Dropbox, Cryptomator and Standard Notes and need it as early as possible when setting up a new machine.
+NOTE: I use Dropbox, Cryptomator and Standard Notes and need it as early as
+possible when setting up a new machine.
 
 Most people can probably just skip this step.
 
@@ -83,29 +116,6 @@ source ~/.bash_profile
 
 Open a new terminal and make sure that there are no errors and that it launched
 into zsh.
-
-# Install Python and Node
-
-We need to install Python 3.6:
-
-`brew install --ignore-dependencies https://raw.githubusercontent.com/Homebrew/homebrew-core/f2a764ef944b1080be64bd88dca9a1d80130c558/Formula/python.rb`
-
-Now we need to make sure that Python 3.6 is mapped to `python`. And when we
-are at it, we can also make sure that `psql` is in the PATH.
-
-Add this to `~/.bash_profile`:
-
-```
-export PATH=/usr/local/opt/python/libexec/bin:$PATH
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
-```
-
-Now install Node:
-
-```
-brew install node
-npm -g install yarn
-```
 
 # Install virtualenv and virtualenvwrapper
 
