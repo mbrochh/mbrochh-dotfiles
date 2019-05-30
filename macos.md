@@ -36,19 +36,19 @@ Next you want to install Homebrew. See https://brew.sh/
 
 Now you can install all the software:
 
-```
-brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree awscli
-```
+`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree awscli`
 
 and
 
-```
-brew cask install alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi notion cryptomator postgres pgadmin4 skype standard-notes visual-studio-code
-```
+`brew cask install alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi notion cryptomator postgres pgadmin4 skype standard-notes visual-studio-code`
 
 # Install Dropbox & Cryptomator & Standard Notes
 
-Now you want to start Dropbox and login and select which folders shall be
+I use Dropbox, Cryptomator and Standard Notes and need it as early as possible when setting up a new machine.
+
+Most people can probably just skip this step.
+
+First you'd want to start Dropbox and login and select which folders shall be
 synced.
 
 Once that is done, you can launch Cryptomator and connect it to the Dropbox
@@ -65,7 +65,7 @@ Now install oh-my-zsh. See https://github.com/robbyrussell/oh-my-zsh
 Activate these plugins in `~/.zshrc`:
 
 ```
-plugins=(git virtualenv osx autojump)
+plugins=(git virtualenv osx autojump python)
 ```
 
 Create a `~/bash_profile`:
@@ -88,9 +88,7 @@ into zsh.
 
 We need to install Python 3.6:
 
-```
-brew install --ignore-dependencies https://raw.githubusercontent.com/Homebrew/homebrew-core/f2a764ef944b1080be64bd88dca9a1d80130c558/Formula/python.rb
-```
+`brew install --ignore-dependencies https://raw.githubusercontent.com/Homebrew/homebrew-core/f2a764ef944b1080be64bd88dca9a1d80130c558/Formula/python.rb`
 
 Now we need to make sure that Python 3.6 is mapped to `python`. And when we
 are at it, we can also make sure that `psql` is in the PATH.
