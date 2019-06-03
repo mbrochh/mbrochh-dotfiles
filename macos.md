@@ -57,18 +57,21 @@ brew install node
 npm -g install yarn
 ```
 
-# Install awscli
+# Install aws-cli
 
-I ran into issues when installing awscli via Homebrew, so let's install it via
+I ran into issues when installing aws-cli via Homebrew, so let's install it via
 pip instead:
 
-`sudo pip install awscli`
+`sudo pip install aws-cli`
 
 # Install software via Homebrew
 
 Now that Python 3.6 is in place, you can install all kinds of other software:
 
 `brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils`
+
+I got a warning here that Python is already installed, but it seems like it
+did indeed install all the above.
 
 and
 
@@ -101,14 +104,14 @@ Activate these plugins in `~/.zshrc`:
 plugins=(git virtualenv osx autojump python)
 ```
 
-Create a `~/bash_profile`:
+Add this at the top of `~/bash_profile`:
 
 ```
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 ```
 
-And add this line to `~/.zshrc`:
+And add this at the bottom of `~/.zshrc`:
 
 ```
 source ~/.bash_profile
@@ -123,13 +126,12 @@ Make sure to `source ~/.zshrc` so that `python` is launching Python 3.6.
 Now you can install virtualenv:
 
 ```
-sudo pip install pip —upgrade
+sudo pip install pip --upgrade
 sudo pip install virtualenv
-sudo pip install virtualenvwrapper
 sudo pip install virtualenvwrapper
 ```
 
-And update `~/.bash_profile`:
+And add to the bottom of `~/.bash_profile`:
 
 ```
 export VIRTUAL_ENV_DISABLE_PROMPT=
