@@ -68,7 +68,7 @@ pip instead:
 
 Now that Python 3.6 is in place, you can install all kinds of other software:
 
-`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils`
+`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils libyaml readline openssl`
 
 I got a warning here that Python is already installed, but it seems like it
 did indeed install all the above.
@@ -140,6 +140,15 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 Open a new terminal and make sure that it doesn't show any errors and that
 you can execute `workon`.
+
+# Tmuxinator
+
+This little bastard is so useful, but a bit tricky to install. Try this:
+
+```
+brew tap nexeck/homebrew-tmuxinator
+brew install nexeck/homebrew-tmuxinator/tmuxinator
+```
 
 # Setup VSCode
 
