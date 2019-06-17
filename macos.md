@@ -68,7 +68,7 @@ pip instead:
 
 Now that Python 3.6 is in place, you can install all kinds of other software:
 
-`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils libyaml readline openssl`
+`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils libyaml readline openssl git-open`
 
 I got a warning here that Python is already installed, but it seems like it
 did indeed install all the above.
