@@ -77,6 +77,18 @@ and
 
 `brew cask install alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi notion cryptomator postgres pgadmin4 skype standard-notes visual-studio-code`
 
+# Install Elasticsearch
+
+`brew cask install brew cask install homebrew/cask-versions/adoptopenjdk8`
+
+and
+
+`brew install elasticsearch kibana`
+
+and
+
+npm -g install elasticdump
+
 # Install Dropbox & Cryptomator & Standard Notes
 
 NOTE: I use Dropbox, Cryptomator and Standard Notes and need it as early as
