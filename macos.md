@@ -8,7 +8,26 @@ I usually clone this repo into `~/Projects/mbrochh-dotfiles/src`
 
 # Wipe the machine
 
-If you start out with an existing machine, you can wipe it like so:
+Before you wipe your MacBook, you might want to back up the following folders:
+
+```
+~/.ssh 
+~/.aws 
+~/Downloads
+~/Documents
+```
+
+You might also have a ton of files in `~/Projects`, you can delete all `node_modules` folders like so:
+
+```
+find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;
+```
+
+Afterwards, compressing the `~/Projects` should not take as much time.
+
+You can count the number of tiles via `find . -type f | wc -l`.
+
+Now you can wipe the machine:
 
 - Boot computer and hold CMD + R
 - Select `Disk Util` > `Macintosh HD` > `Erase`
