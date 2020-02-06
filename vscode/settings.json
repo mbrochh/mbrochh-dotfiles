@@ -1,8 +1,12 @@
 {
   "window.title": "${activeEditorMedium}",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
+  "editor.find.seedSearchStringFromSelection": false,
   "editor.fontSize": 22,
-  "editor.rulers": [80, 120],
+  "editor.rulers": [
+    80,
+    120
+  ],
   "editor.formatOnSave": true,
   "files.exclude": {
     "**/__pycache__": true,
@@ -19,15 +23,33 @@
     "--style",
     "{based_on_style: google, allow_split_before_dict_value: False, column_limit: 79}"
   ],
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": [
+    "--disable=C0111",
+    "--load-plugins",
+    "pylint_django"
+  ],
   "workbench.startupEditor": "newUntitledFile",
   "editor.minimap.enabled": false,
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.formatOnSave": false
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  },
+  "files.associations": {
+    "*.tsx": "typescriptreact"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "gitlens.codeLens.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vscode-neovim.neovimPath": "/usr/local/bin/nvim",
 }
