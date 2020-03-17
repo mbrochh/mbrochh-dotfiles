@@ -52,4 +52,5 @@
   "gitlens.codeLens.enabled": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vscode-neovim.neovimPath": "/usr/local/bin/nvim",
+  "workbench.colorTheme": "Visual Studio Light",
 }
