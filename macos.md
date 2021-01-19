@@ -55,6 +55,19 @@ back into your home folder now!
 
 Next you want to install Homebrew. See https://brew.sh/
 
+# Install software via Homebrew
+
+Now that Python 3.6 is in place, you can install all kinds of other software:
+
+`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils libyaml readline openssl git-open`
+
+I got a warning here that Python is already installed, but it seems like it
+did indeed install all the above.
+
+and
+
+`brew install --cask alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi cryptomator postgres pgadmin4 skype standard-notes visual-studio-code signal telegram`
+
 # Install Python and Node
 
 We need to install Python 3.6:
@@ -86,19 +99,6 @@ I ran into issues when installing aws-cli via Homebrew, so let's install it via
 pip instead:
 
 `sudo pip install aws-cli`
-
-# Install software via Homebrew
-
-Now that Python 3.6 is in place, you can install all kinds of other software:
-
-`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils libyaml readline openssl git-open`
-
-I got a warning here that Python is already installed, but it seems like it
-did indeed install all the above.
-
-and
-
-`brew cask install alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi cryptomator postgres pgadmin4 skype standard-notes visual-studio-code signal telegram`
 
 # Install Elasticsearch
 
