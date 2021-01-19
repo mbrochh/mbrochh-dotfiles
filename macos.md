@@ -68,6 +68,21 @@ and
 
 `brew install --cask alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi cryptomator postgres pgadmin4 skype standard-notes visual-studio-code signal telegram`
 
+# Install Dropbox & Cryptomator & Standard Notes
+
+NOTE: I use Dropbox, Cryptomator and Standard Notes and need it as early as
+possible when setting up a new machine.
+
+Most people can probably just skip this step.
+
+First you'd want to start Dropbox and login and select which folders shall be
+synced. Make sure to sync the Standard Notes folder and the Vault folder.
+
+Once that is done, you can launch Cryptomator and connect it to the Dropbox
+Vault.
+
+Finally, you can launch and login to Standard Notes and Cryptomator.
+
 # Install Python and Node
 
 We need to install Python 3.6:
@@ -111,21 +126,6 @@ and
 and
 
 npm -g install elasticdump
-
-# Install Dropbox & Cryptomator & Standard Notes
-
-NOTE: I use Dropbox, Cryptomator and Standard Notes and need it as early as
-possible when setting up a new machine.
-
-Most people can probably just skip this step.
-
-First you'd want to start Dropbox and login and select which folders shall be
-synced.
-
-Once that is done, you can launch Cryptomator and connect it to the Dropbox
-vault.
-
-Finally, you can launch and login to Standard Notes.
 
 # Setup iTerm2 and zsh
 
