@@ -27,6 +27,8 @@ Afterwards, compressing the `~/Projects` should not take as much time.
 
 You can count the number of tiles via `find . -type f | wc -l`.
 
+You might want to install things like Standard Notes or Cryptomator on the new machine, first, and make sure that you are still able to login.
+
 Now you can wipe the machine:
 
 - Boot computer and hold CMD + R
@@ -56,6 +58,8 @@ Next you want to install Homebrew. See https://brew.sh/
 # Install Python and Node
 
 We need to install Python 3.6:
+
+See https://github.com/mbrochh/installing-python/blob/master/README.md
 
 `brew install --ignore-dependencies https://raw.githubusercontent.com/Homebrew/homebrew-core/f2a764ef944b1080be64bd88dca9a1d80130c558/Formula/python.rb`
 
@@ -94,7 +98,7 @@ did indeed install all the above.
 
 and
 
-`brew cask install alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi notion cryptomator postgres pgadmin4 skype standard-notes visual-studio-code`
+`brew cask install alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi cryptomator postgres pgadmin4 skype standard-notes visual-studio-code signal telegram`
 
 # Install Elasticsearch
 
