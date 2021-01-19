@@ -76,7 +76,7 @@ possible when setting up a new machine.
 Most people can probably just skip this step.
 
 First you'd want to start Dropbox and login and select which folders shall be
-synced. Make sure to sync the Standard Notes folder and the Vault folder.
+synced. Make sure to sync the Standard Notes folder and the Vault folder and set those to "Local". Wait for it to be fully downloaded.
 
 Once that is done, you can launch Cryptomator and connect it to the Dropbox
 Vault.
