@@ -117,7 +117,7 @@ pip instead:
 
 # Install Elasticsearch
 
-`brew cask install brew cask install homebrew/cask-versions/adoptopenjdk8`
+`brew install --cask homebrew/cask-versions/adoptopenjdk8`
 
 and
 
