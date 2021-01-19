@@ -108,12 +108,12 @@ brew install node
 npm -g install yarn
 ```
 
-# Install aws-cli
+# Install awscli
 
-I ran into issues when installing aws-cli via Homebrew, so let's install it via
+I ran into issues when installing awscli via Homebrew, so let's install it via
 pip instead:
 
-`sudo pip install aws-cli`
+`sudo pip install awscli`
 
 # Install Elasticsearch
 
