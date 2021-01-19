@@ -89,18 +89,6 @@ We need to install Python 3.6:
 
 See https://github.com/mbrochh/installing-python/blob/master/README.md
 
-`brew install --ignore-dependencies https://raw.githubusercontent.com/Homebrew/homebrew-core/f2a764ef944b1080be64bd88dca9a1d80130c558/Formula/python.rb`
-
-Now we need to make sure that Python 3.6 is mapped to `python`. And when we
-are at it, we can also make sure that `psql` is in the PATH.
-
-Add this to `~/.bash_profile`:
-
-```
-export PATH=/usr/local/opt/python/libexec/bin:$PATH
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
-```
-
 Now install Node:
 
 ```
