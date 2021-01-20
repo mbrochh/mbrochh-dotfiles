@@ -130,35 +130,8 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 ```
 
-And add this at the bottom of `~/.zshrc`:
-
-```
-source ~/.bash_profile
-```
-
 Open a new terminal and make sure that there are no errors and that it launched
 into zsh.
-
-# Install virtualenv and virtualenvwrapper
-
-Make sure to `source ~/.zshrc` so that `python` is launching Python 3.6.
-Now you can install virtualenv:
-
-```
-sudo pip install pip --upgrade
-sudo pip install virtualenv
-sudo pip install virtualenvwrapper
-```
-
-And add to the bottom of `~/.bash_profile`:
-
-```
-export VIRTUAL_ENV_DISABLE_PROMPT=
-source /usr/local/bin/virtualenvwrapper.sh
-```
-
-Open a new terminal and make sure that it doesn't show any errors and that
-you can execute `workon`.
 
 # Tmuxinator
 
