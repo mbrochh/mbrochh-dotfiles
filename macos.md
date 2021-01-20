@@ -59,14 +59,14 @@ Next you want to install Homebrew. See https://brew.sh/
 
 Now that Python 3.6 is in place, you can install all kinds of other software:
 
-`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils libyaml readline openssl git-open`
+`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils libyaml readline openssl git-open postgresql`
 
 I got a warning here that Python is already installed, but it seems like it
 did indeed install all the above.
 
 and
 
-`brew install --cask alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi cryptomator postgres pgadmin4 skype standard-notes visual-studio-code signal telegram`
+`brew install --cask alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi cryptomator pgadmin4 skype standard-notes visual-studio-code signal telegram`
 
 # Install Dropbox & Cryptomator & Standard Notes
 
