@@ -105,15 +105,11 @@ pip instead:
 
 # Install Elasticsearch
 
-`brew install --cask homebrew/cask-versions/adoptopenjdk8`
-
-and
-
-`brew install elasticsearch kibana`
-
-and
-
+```
+brew install --cask homebrew/cask-versions/adoptopenjdk8
+brew install elasticsearch kibana
 npm -g install elasticdump
+```
 
 # Setup iTerm2 and zsh
 
