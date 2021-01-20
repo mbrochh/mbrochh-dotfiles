@@ -120,7 +120,7 @@ Now install oh-my-zsh. See https://github.com/robbyrussell/oh-my-zsh
 Activate these plugins in `~/.zshrc`:
 
 ```
-plugins=(git virtualenv osx autojump python)
+plugins=(git osx autojump python)
 ```
 
 Add this at the top of `~/bash_profile`:
