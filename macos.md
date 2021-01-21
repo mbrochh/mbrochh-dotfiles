@@ -27,6 +27,8 @@ Afterwards, compressing the `~/Projects` should not take as much time.
 
 You can count the number of tiles via `find . -type f | wc -l`.
 
+You might want to install things like Standard Notes or Cryptomator on the new machine, first, and make sure that you are still able to login.
+
 Now you can wipe the machine:
 
 - Boot computer and hold CMD + R
@@ -53,60 +55,18 @@ back into your home folder now!
 
 Next you want to install Homebrew. See https://brew.sh/
 
-# Install Python and Node
-
-We need to install Python 3.6:
-
-`brew install --ignore-dependencies https://raw.githubusercontent.com/Homebrew/homebrew-core/f2a764ef944b1080be64bd88dca9a1d80130c558/Formula/python.rb`
-
-Now we need to make sure that Python 3.6 is mapped to `python`. And when we
-are at it, we can also make sure that `psql` is in the PATH.
-
-Add this to `~/.bash_profile`:
-
-```
-export PATH=/usr/local/opt/python/libexec/bin:$PATH
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
-```
-
-Now install Node:
-
-```
-brew install node
-npm -g install yarn
-```
-
-# Install aws-cli
-
-I ran into issues when installing aws-cli via Homebrew, so let's install it via
-pip instead:
-
-`sudo pip install aws-cli`
-
 # Install software via Homebrew
 
 Now that Python 3.6 is in place, you can install all kinds of other software:
 
-`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils libyaml readline openssl git-open`
+`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils libyaml readline openssl git-open postgresql`
 
 I got a warning here that Python is already installed, but it seems like it
 did indeed install all the above.
 
 and
 
-`brew cask install alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi notion cryptomator postgres pgadmin4 skype standard-notes visual-studio-code`
-
-# Install Elasticsearch
-
-`brew cask install brew cask install homebrew/cask-versions/adoptopenjdk8`
-
-and
-
-`brew install elasticsearch kibana`
-
-and
-
-npm -g install elasticdump
+`brew install --cask alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi cryptomator pgadmin4 skype standard-notes visual-studio-code signal telegram`
 
 # Install Dropbox & Cryptomator & Standard Notes
 
@@ -116,12 +76,40 @@ possible when setting up a new machine.
 Most people can probably just skip this step.
 
 First you'd want to start Dropbox and login and select which folders shall be
-synced.
+synced. Make sure to sync the Standard Notes folder and the Vault folder and set those to "Local". Wait for it to be fully downloaded.
 
 Once that is done, you can launch Cryptomator and connect it to the Dropbox
-vault.
+Vault.
 
-Finally, you can launch and login to Standard Notes.
+Finally, you can launch and login to Standard Notes and Cryptomator.
+
+# Install Python and Node
+
+We need to install Python 3.6:
+
+See https://github.com/mbrochh/installing-python/blob/master/README.md
+
+Now install Node:
+
+```
+brew install node
+npm -g install yarn
+```
+
+# Install awscli
+
+I ran into issues when installing awscli via Homebrew, so let's install it via
+pip instead:
+
+`sudo pip install awscli`
+
+# Install Elasticsearch
+
+```
+brew install --cask homebrew/cask-versions/adoptopenjdk8
+brew install elasticsearch kibana
+npm -g install elasticdump
+```
 
 # Setup iTerm2 and zsh
 
@@ -132,7 +120,7 @@ Now install oh-my-zsh. See https://github.com/robbyrussell/oh-my-zsh
 Activate these plugins in `~/.zshrc`:
 
 ```
-plugins=(git virtualenv osx autojump python)
+plugins=(git osx autojump python)
 ```
 
 Add this at the top of `~/bash_profile`:
@@ -142,35 +130,8 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 ```
 
-And add this at the bottom of `~/.zshrc`:
-
-```
-source ~/.bash_profile
-```
-
 Open a new terminal and make sure that there are no errors and that it launched
 into zsh.
-
-# Install virtualenv and virtualenvwrapper
-
-Make sure to `source ~/.zshrc` so that `python` is launching Python 3.6.
-Now you can install virtualenv:
-
-```
-sudo pip install pip --upgrade
-sudo pip install virtualenv
-sudo pip install virtualenvwrapper
-```
-
-And add to the bottom of `~/.bash_profile`:
-
-```
-export VIRTUAL_ENV_DISABLE_PROMPT=
-source /usr/local/bin/virtualenvwrapper.sh
-```
-
-Open a new terminal and make sure that it doesn't show any errors and that
-you can execute `workon`.
 
 # Tmuxinator
 
