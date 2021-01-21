@@ -1,4 +1,5 @@
 {
+  "telemetry.enableTelemetry": false,
   "window.title": "${activeEditorMedium}",
   "window.zoomLevel": -1,
   "editor.find.seedSearchStringFromSelection": false,
@@ -7,7 +8,6 @@
     80,
     120
   ],
-  "editor.formatOnSave": true,
   "files.exclude": {
     "**/__pycache__": true,
     "**/.pytest_cache": true,
@@ -31,10 +31,15 @@
   ],
   "workbench.startupEditor": "newUntitledFile",
   "editor.minimap.enabled": false,
+  // "editor.formatOnSaveMode": "modifications",
   "[html]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[jsonc]": {
@@ -51,6 +56,26 @@
   ],
   "gitlens.codeLens.enabled": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vscode-neovim.neovimPath": "/usr/local/bin/nvim",
   "workbench.colorTheme": "Visual Studio Light",
+  "prettier.arrowParens": "always",
+  "editor.formatOnSave": true,
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#ff40802c"
+  },
+  "workbench.editor.enablePreview": false,
+  "zenMode.hideLineNumbers": true,
+  "beautify.language": {
+    "html": [
+      "htm",
+      "html",
+      "django-html"
+    ]
+  },
+  "calva.prettyPrintingOptions": {
+    "enabled": false,
+    "printEngine": "pprint",
+    "width": 120
+},
+"jupyter.interactiveWindowMode": "perFile",
+"workbench.editorAssociations": []
 }

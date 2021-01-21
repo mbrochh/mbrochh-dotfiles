@@ -5,10 +5,12 @@
     status = auto
     branch = auto
 [alias]
+    parent = "!git show-branch | grep '*' | grep -v \"$(git rev-parse --abbrev-ref HEAD)\" | head -n1 | sed 's/.*\\[\\(.*\\)\\].*/\\1/' | sed 's/[\\^~].*//' #"
     d = diff
     br = branch --all
     ci = commit
     co = checkout
+    current = rev-parse HEAD
     dh = diff HEAD
     lg = log --graph --pretty=format:'%Cred%h..%Creset - %s %Cgreen(%cr)%Creset - %an' --abbrev-commit --date=relative
     lgn = log --pretty=oneline --abbrev-commit --show-notes=*
@@ -19,6 +21,8 @@
     pushod = push origin develop:develop
     pullom = pull origin master:master
     pullod = pull origin develop:develop
+[pull]
+    rebase = false
 [merge]
 	tool = fugitive
 [rerere]

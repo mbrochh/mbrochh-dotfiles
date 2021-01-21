@@ -12,6 +12,23 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"useQuery": {
+		"prefix": "USEQUERY",
+		"body": [
+			"import gql from 'graphql-tag'",
+			"import { useQuery } from '@apollo/react-hooks'",
+			"const query = gql``",
+			"const variables = {}",
+			"const { data } = useQuery(query, { variables })",
+		]
+	},
+	"JSX": {
+		"prefix": "JSX",
+		"body": [
+			"/** @jsx jsx */",
+			"import { jsx } from '@emotion/react'",
+		]
+	},
 	"RFC": {
 		"prefix": "RFC",
 		"body": [
@@ -28,6 +45,15 @@
 			"}",
 			"",
 			"export default $1",
+		]
+	},
+	"dangerouslySetInnerHTML": {
+		"prefix": "DSIHTML",
+		"body": [
+			"function createMarkup(content: string) {",
+			"  return { __html: content.replace(/\\n/g, '<br />') }",
+			"}",
+			"<P dangerouslySetInnerHTML={createMarkup(VALUE)} />",
 		]
 	}
 }
