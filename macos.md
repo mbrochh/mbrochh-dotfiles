@@ -107,7 +107,7 @@ pip instead:
 
 ```
 brew install --cask homebrew/cask-versions/adoptopenjdk8
-brew install elasticsearch kibana
+brew install elasticsearch@6 kibana
 npm -g install elasticdump
 ```
 
