@@ -117,6 +117,20 @@ Add this to `~/.bash_profile`:
 export PATH="/usr/local/opt/elasticsearch@6/bin:$PATH"
 ```
 
+Troubleshooting:
+
+* If you had a wrong version of elasticsearch installed, first, make sure to uninstall it and then delete all traces:
+
+```
+rm -rf /usr/local/etc/elasticsearch
+rm -rf /usr/local/var/elasticsearch
+rm -rf /usr/local/var/lib/elasticsearch
+```
+
+Then re-isntall.
+
+* If you are getting this warning when staring the service: `Cannot open file logs/gc.log due to No such file or directory`, see this issue: https://github.com/elastic/windows-installers/issues/249#issuecomment-523078332
+
 # Setup iTerm2 and zsh
 
 Launch `iTerm2` and change the font size of the `default` profile to `22`.
