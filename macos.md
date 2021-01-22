@@ -111,6 +111,12 @@ brew install elasticsearch@6 kibana@6
 npm -g install elasticdump
 ```
 
+Add this to `~/.bash_profile`:
+
+```
+export PATH="/usr/local/opt/elasticsearch@6/bin:$PATH"
+```
+
 # Setup iTerm2 and zsh
 
 Launch `iTerm2` and change the font size of the `default` profile to `22`.
