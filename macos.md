@@ -182,6 +182,10 @@ The above assumes that you cloned this repo into `~/Projects/mbrochh-dotfiles/sr
 
 Use Alfred to start Postgres App and click at the `Initialize` button.
 
+# Enable word-jumping in iTerm
+
+See https://medium.com/@jonnyhaynes/jump-forwards-backwards-and-delete-a-word-in-iterm2-on-mac-os-43821511f0a
+
 # Happy Coding
 
 At this point, your machine should be ready to start working on Python and
