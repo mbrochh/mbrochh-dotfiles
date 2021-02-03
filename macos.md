@@ -155,11 +155,10 @@ into zsh.
 
 # Tmuxinator
 
-This little bastard is so useful, but a bit tricky to install. Try this:
+This little bastard is so useful, but the version on homebrow is usually outdated and therefore not compatible with the version of tmux that is on homebrew. Try this instead:
 
 ```
-brew tap nexeck/homebrew-tmuxinator
-brew install nexeck/homebrew-tmuxinator/tmuxinator
+sudo gem install tmuxinator
 ```
 
 # Setup VSCode
