@@ -179,7 +179,7 @@ npm install -g eslint
 
 The above assumes that you cloned this repo into `~/Projects/mbrochh-dotfiles/src/`.
 
-Install plugins: Vim, Prettier, ESLint, Python
+Install plugins: Vim, Prettier, ESLint, Python, Sort lines
 
 # Start Postgres App
 
