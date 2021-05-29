@@ -140,7 +140,8 @@ Now install oh-my-zsh. See https://github.com/robbyrussell/oh-my-zsh
 Activate these plugins in `~/.zshrc`:
 
 ```
-plugins=(git osx autojump python)
+plugins=(git osx autojump python virtualenv)
+export VIRTUAL_ENV_DISABLE_PROMPT=
 ```
 
 Add this at the top of `~/bash_profile`:
@@ -183,7 +184,9 @@ Install plugins: Vim, Prettier, ESLint, Python, Sort lines
 
 # Start Postgres App
 
-Use Alfred to start Postgres App and click at the `Initialize` button.
+Download https://postgresapp.com/
+
+Run the app and click at the `Initialize` button.
 
 # Enable word-jumping in iTerm
 
