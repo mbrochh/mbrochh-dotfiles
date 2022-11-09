@@ -154,6 +154,19 @@ export LC_ALL=en_US.UTF-8
 Open a new terminal and make sure that there are no errors and that it launched
 into zsh.
 
+See this video to make the terminal look awesome: https://www.youtube.com/watch?v=CF1tMjvHDRA
+
+```
+mkdir ~/Repos
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+source ~/.zshrc
+# answer: y, y, y, y, 3(Rainbow), 1(Unicode), 3(12-hour), 1(Angled), 1(Sharp), 1(Flat), 2(Two lines), 3(Solid), 4(Full), 1(Lightest), 2(Sparse), 2(Many icons), 1(Concise), n, y(Verbose), y(Save)
+# iTerm > Preferences > Profiles > Default > Colors > Import coolnight.itermcolors and then select it
+# find more themes here: https://iterm2colorschemes.com
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
 # Tmuxinator
 
 This little bastard is so useful, but the version on homebrow is usually outdated and therefore not compatible with the version of tmux that is on homebrew. Try this instead:
@@ -181,6 +194,12 @@ npm install -g eslint
 The above assumes that you cloned this repo into `~/Projects/mbrochh-dotfiles/src/`.
 
 Install plugins: Vim, Prettier, ESLint, Python, Sort lines
+
+Update settings:
+
+```
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+```
 
 # Start Postgres App
 
