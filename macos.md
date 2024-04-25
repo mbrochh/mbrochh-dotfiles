@@ -160,7 +160,8 @@ See this video to make the terminal look awesome: https://www.youtube.com/watch?
 
 ```
 mkdir ~/Repos
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# edit ~/.zshrc and set ZSH_THEME to "powerlevel10k/powerlevel10k"
 source ~/.zshrc
 # answer: y, y, y, y, 3(Rainbow), 1(Unicode), 3(12-hour), 1(Angled), 1(Sharp), 1(Flat), 2(Two lines), 3(Solid), 4(Full), 1(Lightest), 2(Sparse), 2(Many icons), 1(Concise), n, y(Verbose), y(Save)
 # iTerm > Preferences > Profiles > Default > Colors > Import coolnight.itermcolors and then select it
