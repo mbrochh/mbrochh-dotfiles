@@ -11,8 +11,8 @@ I usually clone this repo into `~/Projects/mbrochh-dotfiles/src`
 Before you wipe your MacBook, you might want to back up the following folders:
 
 ```
-~/.ssh 
-~/.aws 
+~/.ssh
+~/.aws
 ~/Downloads
 ~/Documents
 ```
@@ -59,14 +59,16 @@ Next you want to install Homebrew. See https://brew.sh/
 
 Now that Python 3.6 is in place, you can install all kinds of other software:
 
-`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils libyaml readline openssl git-open postgresql autoconf automake libtool pkg-config geos zlib bzip2`
+`brew tap epk/epk`
+
+`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils libyaml readline openssl git-open postgresql autoconf automake libtool pkg-config geos zlib bzip2 neovim ripgrep starship zoxide fzf`
 
 I got a warning here that Python is already installed, but it seems like it
 did indeed install all the above.
 
 and
 
-`brew install --cask alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi cryptomator pgadmin4 skype standard-notes visual-studio-code signal telegram`
+`brew install --cask font-sf-mono-nerd-font amethyst alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi cryptomator pgadmin4 skype standard-notes visual-studio-code signal telegram`
 
 # Install Dropbox & Cryptomator & Standard Notes
 
@@ -83,7 +85,7 @@ Vault.
 
 Finally, you can launch and login to Standard Notes and Cryptomator.
 
-# Install Python and Node
+# Alacrit# Install Python and Node
 
 We need to install Python 3.6:
 
@@ -119,7 +121,7 @@ export PATH="/usr/local/opt/elasticsearch@6/bin:$PATH"
 
 Troubleshooting:
 
-* If you had a wrong version of elasticsearch installed, first, make sure to uninstall it and then delete all traces:
+- If you had a wrong version of elasticsearch installed, first, make sure to uninstall it and then delete all traces:
 
 ```
 rm -rf /usr/local/etc/elasticsearch
@@ -129,7 +131,7 @@ rm -rf /usr/local/var/lib/elasticsearch
 
 Then re-isntall.
 
-* If you are getting this warning when staring the service: `Cannot open file logs/gc.log due to No such file or directory`, see this issue: https://github.com/elastic/windows-installers/issues/249#issuecomment-523078332
+- If you are getting this warning when staring the service: `Cannot open file logs/gc.log due to No such file or directory`, see this issue: https://github.com/elastic/windows-installers/issues/249#issuecomment-523078332
 
 # Setup iTerm2 and zsh
 
@@ -166,6 +168,10 @@ source ~/.zshrc
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
+
+# Alacrity
+
+Add to `~/.zshrc`: `
 
 # Tmuxinator
 

@@ -1,0 +1,35 @@
+live_config_reload: true
+
+window:
+  opacity: 0.8
+  padding:
+    x: 10
+    y: 10
+  dynamic_padding: true
+  decorations: none
+
+font:
+  normal:
+    family: "SFMono Nerd Font"
+    style: Regular
+  size: 20.0
+  use_thin_strokes: true
+
+selection:
+  save_to_clipboard: true
+
+# key_bindings:
+  # nvim
+  # - { key: S, mods: Command, chars: "\x1b\x3a\x77\x21\x0a" } # save file
+  # - { key: W, mods: Command, chars: "\x3a\x71\x0a" } # close file
+  # - { key: C, mods: Command, chars: "\x79" } # copy
+  # - { key: A, mods: Command, chars: "\x67\x67\x56\x47" } # select all
+  # - { key: Backslash, mods: Command, chars: "\x17\x76" } # create vertical split
+  # - { key: Apostrophe, mods: Command, chars: "\x17\x73" } # create horizontal split
+  # - { key: RBracket, mods: Command|Shift, chars: "\x1b\x67\x74" } # (<C-c>gt) next tab
+  # - { key: LBracket, mods: Command|Shift, chars: "\x1b\x67\x54" } # (<C-c>gT) prev tab
+  # - { key: Slash, mods: Command, chars: "\x67\x63\x63" } # (gcc) comment out selection
+  # - { key: P, mods: Command, chars: "\x1b\x20\x66\x66" } # (<C-c><Space>ff) open file browser
+  # - { key: F, mods: Command|Shift, chars: "\x1b\x20\x66\x67" } # (<C-c><Space>fg) open live_grep
+  # - { key: Grave, mods: Control|Shift, chars: "\x1b\x20\x74\x74\x0a" } # (<C-c><Space>tt) toggleterm
+  # - { key: F9, mods: Option, chars: "\x20\x73\x0a" } # (<Space>s) sort
