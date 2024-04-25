@@ -194,8 +194,8 @@ rm settings.json
 rm keybindings.json
 ln -s ~/Projects/mbrochh-dotfiles/src/vscode/settings.json .
 ln -s ~/Projects/mbrochh-dotfiles/src/vscode/keybindings.json .
-npm install typescript -g
-npm install -g eslint
+sudo npm install typescript -g
+sudo npm install -g eslint
 ```
 
 The above assumes that you cloned this repo into `~/Projects/mbrochh-dotfiles/src/`.
