@@ -68,7 +68,7 @@ did indeed install all the above.
 
 and
 
-`brew install --cask font-sf-mono-nerd-font amethyst alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi cryptomator pgadmin4 skype standard-notes visual-studio-code signal telegram`
+`brew install --cask font-sf-mono-nerd-font amethyst alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi cryptomator pgadmin4 skype standard-notes visual-studio-code signal telegram obsidian`
 
 # Install Dropbox & Cryptomator & Standard Notes
 
