@@ -149,8 +149,19 @@ export VIRTUAL_ENV_DISABLE_PROMPT=
 Add this at the top of `~/bash_profile`:
 
 ```
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export VIRTUAL_ENV_DISABLE_PROMPT=
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
+alias ld=lazydocker
+alias lg=lazygit
+```
+
+Add this at the end of `~/.zshrc`:
+
+```
+source ~/.bash_profile
 ```
 
 Open a new terminal and make sure that there are no errors and that it launched
