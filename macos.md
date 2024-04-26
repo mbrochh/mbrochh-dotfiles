@@ -13,6 +13,7 @@ Before you wipe your MacBook, you might want to back up the following folders:
 ```
 ~/.ssh
 ~/.aws
+~/.config
 ~/Downloads
 ~/Documents
 ```
