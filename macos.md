@@ -13,6 +13,7 @@ Before you wipe your MacBook, you might want to back up the following folders:
 ```
 ~/.ssh
 ~/.aws
+~/.config
 ~/Downloads
 ~/Documents
 ```
@@ -61,14 +62,14 @@ Now that Python 3.6 is in place, you can install all kinds of other software:
 
 `brew tap epk/epk`
 
-`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils libyaml readline openssl git-open postgresql autoconf automake libtool pkg-config geos zlib bzip2 neovim ripgrep starship zoxide fzf`
+`brew install git zsh zsh-completions autojump wget curl gettext imagemagick watchman tmux reattach-to-user-namespace git-crypt tree findutils libyaml readline openssl git-open postgresql autoconf automake libtool pkg-config geos zlib bzip2 neovim ripgrep starship zoxide fzf skhd yabai lazydocker lazygit`
 
 I got a warning here that Python is already installed, but it seems like it
 did indeed install all the above.
 
 and
 
-`brew install --cask font-sf-mono-nerd-font amethyst alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi cryptomator pgadmin4 skype standard-notes visual-studio-code signal telegram`
+`brew install --cask font-sf-mono-nerd-font amethyst alfred google-chrome firefox iterm2 caffeine skitch dropbox slack fantastical numi cryptomator pgadmin4 skype standard-notes visual-studio-code signal telegram obsidian`
 
 # Install Dropbox & Cryptomator & Standard Notes
 
@@ -149,8 +150,19 @@ export VIRTUAL_ENV_DISABLE_PROMPT=
 Add this at the top of `~/bash_profile`:
 
 ```
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export VIRTUAL_ENV_DISABLE_PROMPT=
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
+alias ld=lazydocker
+alias lg=lazygit
+```
+
+Add this at the end of `~/.zshrc`:
+
+```
+source ~/.bash_profile
 ```
 
 Open a new terminal and make sure that there are no errors and that it launched
@@ -160,7 +172,8 @@ See this video to make the terminal look awesome: https://www.youtube.com/watch?
 
 ```
 mkdir ~/Repos
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# edit ~/.zshrc and set ZSH_THEME to "powerlevel10k/powerlevel10k"
 source ~/.zshrc
 # answer: y, y, y, y, 3(Rainbow), 1(Unicode), 3(12-hour), 1(Angled), 1(Sharp), 1(Flat), 2(Two lines), 3(Solid), 4(Full), 1(Lightest), 2(Sparse), 2(Many icons), 1(Concise), n, y(Verbose), y(Save)
 # iTerm > Preferences > Profiles > Default > Colors > Import coolnight.itermcolors and then select it
@@ -193,8 +206,8 @@ rm settings.json
 rm keybindings.json
 ln -s ~/Projects/mbrochh-dotfiles/src/vscode/settings.json .
 ln -s ~/Projects/mbrochh-dotfiles/src/vscode/keybindings.json .
-npm install typescript -g
-npm install -g eslint
+sudo npm install typescript -g
+sudo npm install -g eslint
 ```
 
 The above assumes that you cloned this repo into `~/Projects/mbrochh-dotfiles/src/`.
