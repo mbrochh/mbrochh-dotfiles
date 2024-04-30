@@ -1,9 +1,10 @@
 {
   "telemetry.enableTelemetry": false,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
   "window.title": "${activeEditorMedium}",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 1,
   "editor.find.seedSearchStringFromSelection": false,
-  "editor.fontSize": 22,
+  "editor.fontSize": 16,
   "editor.rulers": [
     80,
     120
@@ -18,17 +19,6 @@
   },
   "search.followSymlinks": false,
   "python.venvPath": "~/.virtualenvs",
-  "python.formatting.provider": "yapf",
-  "python.formatting.yapfArgs": [
-    "--style",
-    "{based_on_style: google, allow_split_before_dict_value: False, column_limit: 79}"
-  ],
-  "python.linting.pylintEnabled": true,
-  "python.linting.pylintArgs": [
-    "--disable=C0111",
-    "--load-plugins",
-    "pylint_django"
-  ],
   "workbench.startupEditor": "newUntitledFile",
   "editor.minimap.enabled": false,
   // "editor.formatOnSaveMode": "modifications",
@@ -54,7 +44,6 @@
     "typescript",
     "typescriptreact"
   ],
-  "gitlens.codeLens.enabled": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.colorTheme": "Visual Studio Light",
   "prettier.arrowParens": "always",
@@ -64,18 +53,7 @@
   },
   "workbench.editor.enablePreview": false,
   "zenMode.hideLineNumbers": true,
-  "beautify.language": {
-    "html": [
-      "htm",
-      "html",
-      "django-html"
-    ]
-  },
-  "calva.prettyPrintingOptions": {
-    "enabled": false,
-    "printEngine": "pprint",
-    "width": 120
-},
-"jupyter.interactiveWindowMode": "perFile",
-"workbench.editorAssociations": []
+  "workbench.editorAssociations": [],
+  "git.openRepositoryInParentFolders": "never",
+  "security.workspace.trust.untrustedFiles": "open"
 }
