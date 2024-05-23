@@ -45,7 +45,6 @@
     "typescriptreact"
   ],
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorTheme": "Visual Studio Light",
   "prettier.arrowParens": "always",
   "editor.formatOnSave": true,
   "workbench.colorCustomizations": {
@@ -55,5 +54,8 @@
   "zenMode.hideLineNumbers": true,
   "workbench.editorAssociations": [],
   "git.openRepositoryInParentFolders": "never",
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "[markdown]": {
+    "editor.formatOnSave": false,
+  }
 }
