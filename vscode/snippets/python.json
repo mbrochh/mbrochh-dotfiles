@@ -1,0 +1,32 @@
+{
+    "ipdb": {
+        "prefix": "ipdb",
+        "body": [
+            "import ipdb",
+            "ipdb.set_trace(context=15)"
+        ],
+        "description": "inserts breakpoint"
+    },
+    "timer": {
+        "prefix": "timer",
+        "body": [
+            "import time",
+            "tic = time.perf_counter()",
+            "toc = time.perf_counter()",
+            "timetaken = f'{toc - tic:0.4f}'",
+            "print(f'{timetaken} seconds')"
+        ],
+        "description": "adds timer"
+    },
+    "pytest-parametrize": {
+        "prefix": "pytest-parametrize",
+        "body": [
+            "@pytest.mark.parametrize('arg1, arg2, exp, msg', [",
+            "   (val1, val2, 'exp', 'msg'),",
+            "   (val3, val4, 'exp', 'msg'),",
+            "])  # yapf: disable",
+            "def test_function_name(arg1, arg2, exp, msg):",
+            "   pass"
+        ],
+    }
+}
